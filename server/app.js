@@ -29,6 +29,12 @@ app.use("/api/albums/", albumsRoutes);
 const songsRoutes = require("./routes/songs");
 app.use("/api/songs/", songsRoutes);
 
+const AuthSignRoutes = require("./routes/signin");
+app.use("/api/sign/", AuthSignRoutes);
+
+const AuthLoginRoutes = require("./routes/login");
+app.use("/api/login/", AuthLoginRoutes);
+
 mongoose.connect(process.env.DB_STRING, { useNewUrlParser: true });
 
 mongoose.connection

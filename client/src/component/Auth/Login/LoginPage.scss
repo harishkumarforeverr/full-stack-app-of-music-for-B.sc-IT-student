@@ -1,0 +1,139 @@
+@import "../../../Scss/base/_colors.scss";
+
+.Login-page-container {
+  background-color: var(--white);
+  height: 95.5vh;
+  text-align: center;
+  .login_content {
+    padding: 0% 6%;
+    padding-left: 4%;
+    .ant-image-img {
+      width: 75%;
+      margin-top: 12%;
+    }
+    .login_inputFields {
+      width: 80%;
+      margin-top: 8%;
+      margin-left: 5%;
+      h1 {
+        text-align: left;
+        font-family: "Poppins";
+        font-size: 3.4rem;
+        opacity: 0.7;
+        font-weight: 600;
+      }
+      .ant-divider-horizontal {
+        background-color: var(--primaryOrange);
+        height: 5px;
+        border-radius: 10px;
+        min-width: 10%;
+        width: 10%;
+        margin-top: -1rem;
+      }
+      .ant-form-item-control-input-content {
+        max-width: 90%;
+        // height: 5rem;
+        margin-top: 5%;
+        .ant-input {
+          height: 4.5rem;
+          &:hover,
+          &:focus,
+          &:active,
+          &:after {
+            border-color: var(--grey);
+          }
+        }
+      }
+      .password_field {
+        margin-top: -3%;
+        .ant-input {
+          height: 3.5rem;
+          &:hover,
+          &:focus {
+            border-color: unset;
+          }
+        }
+        .ant-input-affix-wrapper:hover {
+          border-color: var(--grey);
+        }
+      }
+      .checkbox_content {
+        text-align: left;
+        padding-top: 5%;
+        font-size: 1.3rem;
+        .ant-form-item-control-input-content {
+          margin-top: 0;
+        }
+        .ant-checkbox + span {
+          opacity: 0.8;
+          color: var(--black-secondary);
+        }
+        .check_me {
+          display: flex;
+          justify-content: space-between;
+          width: 90%;
+          margin-bottom: 0;
+          .check_forgot {
+            opacity: 0.8;
+            color: var(--black-secondary);
+            margin-top: 0.5rem;
+            cursor: pointer;
+          }
+          .ant-form-item-control {
+            width: 20rem;
+          }
+          .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: var(--primaryOrange);
+            border-color: var(--primaryOrange);
+            border-radius: 50%;
+          }
+          .ant-checkbox-inner {
+            border-color: var(--primaryOrange);
+            border-radius: 50%;
+          }
+          .ant-checkbox {
+            border-radius: 50%;
+          }
+          .ant-checkbox-checked:after {
+            border: none;
+          }
+        }
+        .ant-btn-primary {
+          // background-color: var(--primaryOrange);
+          border: none;
+          width: 100%;
+          height: 4.4rem;
+          margin-top: -5rem;
+          border-radius: 10px;
+          background: #f06e38;
+          margin-top: 1rem;
+        }
+      }
+      .ant-form-item-explain-error {
+        text-align: left;
+        width: 90%;
+        font-size: 1.2rem;
+      }
+    }
+    .login_Signup_tag {
+      width: 75%;
+      margin-top: 8%;
+      text-align: center;
+      h4 {
+        opacity: 0.8;
+        color: var(--black-secondary);
+        span {
+          color: var(--primaryOrange);
+          padding-left: 0.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.login-spin {
+  //  background-color: aqua;
+  .ant-spin-dot {
+    top: 75% !important;
+  }
+}

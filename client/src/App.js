@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
-import Home from "./component/Home";
-import Login from "./component/Login";
+import Home from "./component/Home"; 
 
 import { app } from "./config/firebase.config";
 import { AnimatePresence, motion } from "framer-motion";
@@ -11,6 +10,9 @@ import { actionType } from "./Context/reducer";
 import { DashBoard, MusicPlayer } from "./component";
 
 import { getAuth } from "firebase/auth";
+import LoginPage from "./component/Auth/Login/LoginPage";
+import SignupPage from "./component/Auth/Signup/SignupPage";
+import RecommendationCard from "./component/Cards/RecommendationCard";
 
 function App() {
   const firebaseAuth = getAuth(app);
@@ -21,37 +23,40 @@ function App() {
     false || window.localStorage.getItem("auth") === "true"
   );
 
-  useEffect(() => {
-    firebaseAuth.onAuthStateChanged((userCred) => {
-      if (userCred) {
-        userCred.getIdToken().then((token) => {
-          //console.log(token);
-          window.localStorage.setItem("auth", "true");
-          validateUser(token).then((data) => {
-            dispatch({
-              type: actionType.SET_USER,
-              user: data,
-            });
-          });
-        });
-      } else {
-        setAuth(false);
-        dispatch({
-          type: actionType.SET_USER,
-          user: null,
-        });
-        window.localStorage.setItem("auth", "false");
+  // useEffect(() => {
+  //   firebaseAuth.onAuthStateChanged((userCred) => {
+  //     if (userCred) {
+  //       userCred.getIdToken().then((token) => {
+  //         //console.log(token);
+  //         window.localStorage.setItem("auth", "true");
+  //         validateUser(token).then((data) => {
+  //           dispatch({
+  //             type: actionType.SET_USER,
+  //             user: data,
+  //           });
+  //         });
+  //       });
+  //     } else {
+  //       setAuth(false);
+  //       dispatch({
+  //         type: actionType.SET_USER,
+  //         user: null,
+  //       });
+  //       window.localStorage.setItem("auth", "false");
 
-        navigate("/login");
-      }
-    });
-  }, []);
+  //       navigate("/login");
+  //     }
+  //   });
+  // }, []);
 
   return (
     <AnimatePresence>
-      <div className="h-auto min-w-(680px) bg-primary flex justify-center items-center">
+      {/* <div className="h-auto min-w-(680px) bg-primary flex justify-center items-center"> */}
         <Routes>
-          <Route path="/login" element={<Login setAuth={setAuth} />} />
+          {/* <Route path="/login" element={<Login setAuth={setAuth} />} /> */}
+          <Route path="/login" element={<LoginPage   />} />
+          <Route path="/signup" element={<SignupPage   />} />
+          <Route path="/recommendation" element={<RecommendationCard   />} />
           <Route path="/*" element={<Home />} />
           <Route path="/Dashboard/*" element={<DashBoard />} />
         </Routes>
@@ -65,7 +70,7 @@ function App() {
             <MusicPlayer />
           </motion.div>
         )}
-      </div>
+      {/* </div> */}
     </AnimatePresence>
   );
 }

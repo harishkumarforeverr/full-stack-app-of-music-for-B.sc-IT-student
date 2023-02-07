@@ -1,0 +1,125 @@
+@import "../base/colors";
+@import "./pagination";
+
+// Styles for Tables starts from here
+@mixin tablestyles {
+  width: 100%;
+  .ant-table-thead > tr > th {
+    background: var(--primaryOrange) 0% 0% no-repeat padding-box;
+    color: var(--pure-white);
+    text-align: left;
+    font-size: 1.35rem;
+    font-weight: 500;
+    padding: 0.8rem 0%;
+    padding-left: 2%;
+    border: none;
+    font-family: "poppins";
+  }
+  .ant-table-tbody > tr > td {
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--dark-secondary);
+    padding: 0.5rem 0rem;
+    padding-top: 2rem;
+    padding-left: 2%;
+    font-family: "poppins";
+    border-bottom: 1px solid var(--primarywhite);
+    a {
+      color: var(--primaryOrange);
+      text-decoration: underline;
+      font-weight: 500;
+    }
+  }
+  .ant-table-tbody > tr > td:last-child {
+    text-transform: lowercase;
+    border-bottom-right-radius: 10px;
+    .ant-btn {
+      background: var(--primaryOrange) 0% 0% no-repeat padding-box;
+      border-radius: 8px;
+      opacity: 1;
+      color: var(--pure-white);
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    display: none;
+  }
+  .ant-table-thead
+    > tr
+    > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    width: 0;
+    height: 0;
+    content: none;
+  }
+  .ant-table-cell-row-hover {
+    background-color: var(--primarywhite) !important;
+    // z-index: 2;
+  }
+  // .ant-table-tbody > tr.ant-table-row:hover > td,
+  // .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  //   background-color: var(--pure-white) !important;
+  // }
+  div.ant-table-body {
+    max-height: 77vh !important;
+    overflow-y: auto !important;
+    @include scrollBarStyle;
+  }
+  @include paginationStyles;
+}
+// Styles for Tables end here
+
+//mixin styles for Scroll Bar starts from here
+@mixin scrollBarStyle {
+  &::-webkit-scrollbar {
+    width: 1.2rem;
+    background-color: var(--grey-secondary);
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: var(--grey-secondary);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--black-sixth);
+  }
+}
+//mixin styles for Scroll Bar end here
+
+// mixin styles for Buttons starts from here
+@mixin Button_styles {
+  // background-color: var(--primaryOrange);
+  border: none;
+  color: var(--black-six);
+  width: 10rem;
+  height: 3rem;
+  opacity: 0.8;
+  font-size: 1.12rem;
+  font-weight: 600;
+  border-radius: 10px;
+}
+// mixin styles for Buttons end here
+
+// tab ink bar centered
+@mixin inkbarcentered {
+  .ant-tabs-ink-bar {
+    display: none;
+  }
+  .ant-tabs-tab::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.31rem;
+    width: 25%;
+    background-color: transparent;
+    left: 30%;
+    // transform: translateX(-50%);
+    transition: all 0.008s;
+  }
+  .ant-tabs-tab-active.ant-tabs-tab::after {
+    background-color: var(--primaryOrange);
+    transition: all 0.005s;
+  }
+}

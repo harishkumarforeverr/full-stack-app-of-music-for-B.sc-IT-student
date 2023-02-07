@@ -1,0 +1,14 @@
+.CustomTable {
+  .ant-table-filter-trigger {
+    display: none;
+  }
+  .ant-table-thead th.ant-table-column-has-sorters:hover {
+    background-color: #f06e38;
+  }
+  .ant-table-column-sorter {
+    color: white;
+    svg {
+      color: white;
+    }
+  }
+}

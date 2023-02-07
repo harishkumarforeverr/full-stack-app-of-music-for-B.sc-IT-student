@@ -1,0 +1,54 @@
+@import "./pagination";
+
+@mixin tableTheme {
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-top-left-radius: 0px;
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-top-right-radius: 0px;
+  }
+
+  .ant-table-thead > tr > th {
+    // border-radius: 10px;
+    background-color: var(--primaryOrange);
+    text-align: center;
+    padding: 0.5%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+    border-bottom: none;
+  }
+
+  tbody > tr:last-child > td:last-child {
+    border-bottom-right-radius: 0px;
+  }
+  .ant-table-tbody > tr > td {
+    text-align: center;
+    background-color: var(--pure-white);
+    padding: 1.7%;
+    // padding: 0.5% 0% 1% 3%;
+    // text-align: left;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black-twelth);
+    border-bottom: none;
+    // opacity: 0.9;CAE8ED
+    // border-bottom: none;
+  }
+
+  .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+    background-color: var(--primarywhite);
+    // background-color: black;
+  }
+
+  .ant-table-thead
+    > tr
+    > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    width: 0;
+    height: 0;
+    content: none;
+    // background-color: #2d80b5;
+  }
+
+  @include paginationStyles;
+}

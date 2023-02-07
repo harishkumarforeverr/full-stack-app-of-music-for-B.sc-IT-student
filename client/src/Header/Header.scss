@@ -1,0 +1,19 @@
+@import "../Scss/base/colors";
+
+.Header-contianer {
+  background-color: var(--white);
+  h1 {
+    text-align: left;
+    font-family: "Poppins";
+    font-size: 4rem;
+    opacity: 0.9;
+    font-weight: 700;
+    padding-left: 5%;
+    Span {
+      color: var(--primaryOrange);
+    }
+    b {
+      font-weight: 700;
+    }
+  }
+}

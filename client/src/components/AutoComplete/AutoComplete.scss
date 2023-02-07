@@ -1,0 +1,78 @@
+.AutocompletePlace-container {
+  position: relative;
+  width: 100%;
+
+  .google-places-autocomplete__input {
+    //   added font-famiily here
+    width: 96%;
+    padding: 0.1rem 0 0;
+    border: none;
+    color: #777777;
+    opacity: 1;
+    background-color: transparent;
+    outline: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: var(--Medium);
+  }
+  .google-places-autocomplete__input:hover {
+    color: black;
+    opacity: 0.45;
+  }
+  .google-places-autocomplete__suggestions-container {
+    position: absolute;
+    top: 4rem;
+    background-color: #ffff;
+    width: 30vw;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px #d9d9d9;
+    z-index: 1000;
+    .google-places-autocomplete__suggestion {
+      padding: 0.4rem 1rem 0.4rem 1.5rem;
+      cursor: pointer;
+    }
+    .google-places-autocomplete__suggestion:nth-child(1) {
+      padding-top: 0.6rem;
+    }
+    .google-places-autocomplete__suggestion:nth-last-child(1) {
+      padding-bottom: 0.6rem;
+    }
+    .google-places-autocomplete__suggestion:hover {
+      background-color: #2d80b5;
+      color: white;
+      border-radius: 2px;
+    }
+  }
+
+  .AutocompletePlace-results {
+    position: absolute;
+    background-color: #ffff;
+    z-index: 2000;
+    width: auto;
+    z-index: 2;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 40px #71717129;
+    border-radius: 15px;
+    opacity: 1;
+
+    h3 {
+      padding: 1rem;
+      position: relative;
+      cursor: pointer;
+      white-space: nowrap;
+      z-index: 5;
+      overflow: hidden;
+
+      img {
+        width: 25px;
+        height: 30px;
+        margin-right: 1%;
+      }
+    }
+  }
+  input.ant-input.AutocompletePlace-input {
+    width: 90%;
+    text-overflow: ellipsis;
+  }
+}
