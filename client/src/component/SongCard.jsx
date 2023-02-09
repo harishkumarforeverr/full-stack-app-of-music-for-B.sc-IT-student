@@ -12,7 +12,7 @@ import {
 import { useStateValue } from "../Context/StateProvider";
 import { actionType } from "../Context/reducer";
 import { deleteObject, ref } from "firebase/storage";
-import { storage } from "../config/firebase.config";
+// import { storage } from "../config/firebase.config";
 
 const SongCard = ({ data, index, type }) => {
   const [isDelete, setisDelete] = useState(false);
@@ -24,18 +24,18 @@ const SongCard = ({ data, index, type }) => {
     console.log(data);
 
     // Delete songs
-    const deleteRef = ref(storage, data.imageURL);
-    deleteObject(deleteRef).then(() => {});
-    deleteSongById(data._id).then((res) => {
-      if (res.data) {
-        getAllSongs().then((data) => {
-          dispath({
-            type: actionType.SET_ALL_SONGS,
-            allSongs: data.songs,
-          });
-        });
-      }
-    });
+    // const deleteRef = ref(storage, data.imageURL);
+    // deleteObject(deleteRef).then(() => {});
+    // deleteSongById(data._id).then((res) => {
+    //   if (res.data) {
+    //     getAllSongs().then((data) => {
+    //       dispath({
+    //         type: actionType.SET_ALL_SONGS,
+    //         allSongs: data.songs,
+    //       });
+    //     });
+    //   }
+    // });
 
     //Artists
     deleteArtistById(data._id).then((res) => {

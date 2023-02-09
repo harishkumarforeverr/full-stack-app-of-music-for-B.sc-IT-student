@@ -4,7 +4,7 @@ import { logo } from "../img";
 import { useStateValue } from "../Context/StateProvider";
 import { isActiveStyles, isNotActiveStyles } from "../utils/styles";
 import { getAuth } from "firebase/auth";
-import { app } from "../config/firebase.config";
+// import { app } from "../config/firebase.config";
 import { motion } from "framer-motion";
 
 import { FaCrown } from "react-icons/fa";
@@ -16,13 +16,13 @@ const Header = () => {
   const [isMenu, setIsMenu] = useState(false);
 
   const logout = () => {
-    const firebaseAuth = getAuth(app);
-    firebaseAuth
-      .signOut()
-      .then(() => {
-        window.localStorage.setItem("auth", "false");
-      })
-      .catch((e) => console.log(e));
+    // const firebaseAuth = getAuth(app);
+    // firebaseAuth
+    //   .signOut()
+    //   .then(() => {
+    //     window.localStorage.setItem("auth", "false");
+    //   })
+    //   .catch((e) => console.log(e));
     navigate("/login", { replace: true });
   };
 

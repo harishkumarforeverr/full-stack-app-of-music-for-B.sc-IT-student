@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./component/Home"; 
 
-import { app } from "./config/firebase.config";
+// import { app } from "./config/firebase.config";
 import { AnimatePresence, motion } from "framer-motion";
 import { validateUser } from "./api";
 import { useStateValue } from "./Context/StateProvider";
@@ -15,7 +15,7 @@ import SignupPage from "./component/Auth/Signup/SignupPage";
 import RecommendationCard from "./component/Cards/RecommendationCard";
 
 function App() {
-  const firebaseAuth = getAuth(app);
+  // const firebaseAuth = getAuth(app);
   const navigate = useNavigate();
 
   const [{ user, isSongPlaying }, dispatch] = useStateValue();

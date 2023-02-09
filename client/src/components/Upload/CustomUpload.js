@@ -1,6 +1,6 @@
 import { Upload } from "antd";
 import React, { useState } from "react";
-import S3 from "react-aws-s3";
+// import S3 from "react-aws-s3";
  
 
 const CustomUpload = (props) => {
@@ -38,7 +38,8 @@ const CustomUpload = (props) => {
       };
       console.log("config", config);
       const mediaFileName = "uploadfrom";
-      const ReactS3Client = new S3(config);
+      const ReactS3Client =12;
+      // new S3(config);
       ReactS3Client.uploadFile(filedata, newFileName, mediaFileName).then((data) => {
         console.log("data", data.location.substring(data.location.lastIndexOf("/") + 1));
         

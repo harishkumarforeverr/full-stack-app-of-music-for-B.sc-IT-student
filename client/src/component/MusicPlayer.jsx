@@ -81,7 +81,7 @@ function MusicPlayer() {
             <RiPlayListFill className="text-textColor hover:text-headingColor" />
           </motion.i>
         </div>
-        <a href="https://firebasestorage.googleapis.com/v0/b/projectmusicapp-123eb.appspot.com/o/audio%2F1675181398632-Zack_Knight__Jasmin_Walia_-_Bom_Diggy_(Official_Music_Video)(256k).mp3?alt=media&token=0c86c82f-5b9c-41dc-b3dd-3df01a7995a4" download>ssssssssssss</a>
+        
         <div className="flex-1">
           <AudioPlayer
             src={allSongs[songIndex]?.songURL}
