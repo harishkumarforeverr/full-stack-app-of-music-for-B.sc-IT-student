@@ -47,9 +47,9 @@ const express = require("express");
 const router = express.Router();
 const Songs = require("../../modules/songs/songs");
 
-router.get("/", async (req, res) => {
-  res.status(200).send("something went!");
-});
+// router.get("/", async (req, res) => {
+//   res.status(200).send("something went!");
+// });
 
 router.post("/", async (req, res) => {
   try {
@@ -67,13 +67,24 @@ router.post("/", async (req, res) => {
       .then(async () => {
         return res
           .status(200)
-          .json({ status: 200, message: "New user Added", data: newSong });
+          .json({ status: 200, message: "add  ", data: newSong });
       })
       .catch((e) => {
         return res
           .status(400)
           .json({ status: 400, message: e, status: "Error" });
       });
+  } catch (e) {
+    res.status(500).send({
+      message: "something went wrong try again",
+      error: e,
+    });
+  }
+});
+router.get("/", async (req, res) => {
+  try {
+    var newSong = await Songs.find({});
+    res.status(200).json({ status: 200, message: "add  ", data: newSong });
   } catch (e) {
     res.status(500).send({
       message: "something went wrong try again",

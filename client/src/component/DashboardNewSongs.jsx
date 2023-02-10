@@ -10,6 +10,7 @@ import {
   uploadBytesResumable,
 } from "firebase/storage";
 import { Button, Input, Select } from "antd";
+import axios from "axios";
 function Alert({ type }) {
   return (
     <motion.div
@@ -236,14 +237,14 @@ const options = [
     label: "Sad Song",
   },
 ];
-const DashboardNewSongs = () => {
+const DashboardNewSongs = ({setView,getSongs}) => {
   const [artistName, setArtistName] = useState("");
   const [artistImage, setArtistImage] = useState("");
   const [songName, setSongName] = useState("");
   const [songImage, setSongImage] = useState("");
   const [song, setSong] = useState("");
   const [category, setcategory] = useState("");
-  const submit = () => {
+  const submit = async () => {
     if (
       artistName &&
       artistImage &&
@@ -260,7 +261,10 @@ const DashboardNewSongs = () => {
         song,
         category,
       };
-      console.log("updateData", updateData);
+      const res=await axios.post("http://localhost:4000/api/songs",updateData)
+      console.log("updateData", updateData,res);
+      setView("songs")
+      getSongs()
     }
   };
   return (

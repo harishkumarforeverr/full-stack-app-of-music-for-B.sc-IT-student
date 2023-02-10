@@ -26,8 +26,8 @@ app.use("/api/albums/", albumsRoutes);
 
 //Songs routes
 
-const songsRoutes = require("./routes/songs");
-app.use("/api/songs/", songsRoutes);
+// const songsRoutes = require("./routes/songs");
+// app.use("/api/songs/", songsRoutes);
 
 // const AuthSignRoutes = require("./routes/signin");
 // app.use("/api/auth/", AuthSignRoutes);

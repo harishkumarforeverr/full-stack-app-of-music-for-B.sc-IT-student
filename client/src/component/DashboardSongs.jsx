@@ -1,82 +1,111 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { IoAdd, IoPause, IoPlay, IoTrash } from "react-icons/io5";
-import { AiOutlineClear } from "react-icons/ai";
-import { useStateValue } from "../Context/StateProvider";
-import { getAllSongs } from "../api";
-import { actionType } from "../Context/reducer";
-import SongCard from "./SongCard";
-
+import { Button, Card } from "antd";
+import AudioPlayer from "react-h5-audio-player";
+import { useNavigate } from "react-router-dom";
+import "react-h5-audio-player/lib/styles.css";
+import DashboardNewSongs from "./DashboardNewSongs";
+const { Meta } = Card;
 function DashboardSongs() {
-  const [songFilter, setSongFilter] = useState("");
-  const [isfocus, setisfocus] = useState(false);
-  const [{ allSongs }, dispath] = useStateValue();
-
+  const [songs, setSongs] = useState([]);
+  const getSongs = async () => {
+    const res = await axios.get("http://localhost:4000/api/songs");
+    console.log("jvdhsvad", res);
+    setSongs(res.data.data);
+  };
   useEffect(() => {
-    if (!allSongs) {
-      getAllSongs().then((data) => {
-        dispath({
-          type: actionType.SET_ALL_SONGS,
-          allSongs: data.songs,
-        });
-      });
-    }
-  });
-
+    getSongs();
+  }, []);
+  const [play, setPlay] = useState("");
+  const [view, setView] = useState("songs");
   return (
-    <div className="w-full p-4 flex items-center justify-center flex-col">
-      <div className="w-full flex justify-center items-center gap-20">
-        <NavLink
-          to={"/dashboard/newSong"}
-          className="flex items-center justify-center px-4 py-3 border-blue-300 hover:border-blue-500 hover:shadow-md cursor-pointer"
+    <>
+    {
+      view=="songs" &&
+  
+      <div>
+        <Button
+          onClick={() => {
+            setView("addSongs");
+          }}
         >
-          <IoAdd />
-        </NavLink>
-        <input
-          type="text"
-          className={`w-52 px-4 py-2 border ${
-            isfocus ? "border-blue-500 shadow-md" : "border-blue-300"
-          } rounded-md bg-transparent outline-none duration-150 transition-all ease-in-out text-base text-textColor font-semibold `}
-          placeholder="Search Here.."
-          value={songFilter}
-          onChange={(e) => setSongFilter(e.target.value)}
-          onBlur={() => {
-            setisfocus(false);
+          {" "}
+          Add New
+        </Button>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            gap: "2rem",
           }}
-          onFocus={() => {
-            setisfocus(true);
-          }}
-        />
-        <i>
-          <AiOutlineClear className="text-3xl text-textColor cursor-pointer " />
-        </i>
-      </div>
-      {/*main container */}
-      <div className="relative w-full my-4 p-4 py-16 border border-blue-400 rounded-md">
-        {/* The count */}
-        <div className="absolute top-4 left-4">
-          <p className="text-xl font-bold">
-            <span className="text-sm font-semibold text-textColor">
-              Count :{" "}
-            </span>
-            {allSongs?.length}
-          </p>
+        >
+          {songs.map((song) => {
+            return (
+              <div>
+                <Card
+                  onClick={() => {
+                    setPlay(song.song);
+                  }}
+                  hoverable
+                  style={{
+                    width: 240,
+                  }}
+                  cover={
+                    <img
+                      style={{
+                        width: "100%",
+                        height: "10rem",
+                      }}
+                      src={song.songImage}
+                      alt="images"
+                    />
+                  }
+                >
+                  {/* <Meta
+                title={song.songName}
+                description={song.category}
+              /> */}
+                  <p>song: {song.songName} </p>
+                  <p>category: {song.category} </p>
+                  <p>artist: {song.artistName} </p>
+                </Card>
+              </div>
+            );
+          })}
         </div>
-        <SongContainer data={allSongs} />
+        <div>
+          <AudioPlayer
+            autoPlay
+            src={play}
+            onPlay={(e) => console.log("onPlay")}
+          />
+        </div>{" "}
+     
       </div>
-    </div>
+    }
+      {view == "addSongs" && (
+        <div>
+          {" "}
+          <h1> Add New Song </h1>
+          <Button     onClick={() => {
+            setView("songs");  getSongs();
+          }}> Back</Button>
+          <DashboardNewSongs setView={setView} getSongs={getSongs} />
+        </div>
+      )}
+    </>
   );
 }
 
-export const SongContainer = ({ data }) => {
-  return (
-    <div className="w-full flex flex-wrap gap-3 items-center justify-evenly ">
-      {data &&
-        data.map((song, i) => (
-          <SongCard key={song._id} data={song} index={i} type="song" />
-        ))}
-    </div>
-  );
-};
+// export const SongContainer = ({ data }) => {
+//   return (
+//     <div className="w-full flex flex-wrap gap-3 items-center justify-evenly ">
+//       {data &&
+//         data.map((song, i) => (
+//           <SongCard key={song._id} data={song} index={i} type="song" />
+//         ))}
+//     </div>
+//   );
+// };
 
 export default DashboardSongs;
