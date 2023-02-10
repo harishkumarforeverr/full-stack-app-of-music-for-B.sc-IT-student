@@ -168,7 +168,7 @@ const RecommendationCard = () => {
         <CustomButton
         className="recommedButton"
          type="primary" htmlType="submit">
-          Login
+          Subnit
         </CustomButton>
       </div>
     </div>
