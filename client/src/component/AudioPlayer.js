@@ -1,49 +1,33 @@
+// import React from "react";
+// import AudioPlayer from "react-h5-audio-player";
+
+// const AudioPlayerComp = ({ play }) => {
+//   return (
+//     <div className="musicplayerConatiner">
+//       <AudioPlayer autoPlay src={play} onPlay={(e) => console.log("onPlay")} />
+//     </div>
+//   );
+// };
+// export default AudioPlayerComp;
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, Card } from "antd";
-import AudioPlayer from "react-h5-audio-player";
-import { useNavigate } from "react-router-dom";
-import "react-h5-audio-player/lib/styles.css";
-import DashboardNewSongs from "./DashboardNewSongs";
+import AudioPlayer from "react-h5-audio-player"; 
+import "react-h5-audio-player/lib/styles.css"; 
 import "./DashboardSongs.css";
 import { updateLastListenedSong } from "./apis/updateUserInfo";
+ 
+function AudioPlayerComp({songs}) { 
+ 
 
-const { Meta } = Card;
-function DashboardSongs() {
-  const [songs, setSongs] = useState([]);
-  const getSongs = async () => {
-    const res = await axios.get("http://localhost:4000/api/songs");
-    console.log("jvdhsvad", res);
-    setSongs(res.data.data);
-  };
-
-  const getLastPlayedCategorySongs = async () => {
-    const userId = localStorage.getItem("userId");
-    const res = await axios.get("http://localhost:4000/api/userInfo/" + userId);
-    if (res.status == 200) {
-      const data = res.data.data;
-      setSongs(data);
-      console.log("harishshshs", res);
-    }
-  };
-  useEffect(() => {
-    // getSongs();
-    getLastPlayedCategorySongs();
-  }, []);
+ 
   const [play, setPlay] = useState("");
   const [view, setView] = useState("songs");
   return (
     <>
       {view == "songs" && (
         <div>
-          <Button
-            onClick={() => {
-              setView("addSongs");
-            }}
-          >
-            {" "}
-            Add New
-          </Button>
+         
           <div
             style={{
               display: "grid",
@@ -57,6 +41,7 @@ function DashboardSongs() {
                   <Card
                     onClick={() => {
                       setPlay(song.song);
+                      
                       updateLastListenedSong(song.category,localStorage.getItem("userId"))
                     }}
                     hoverable
@@ -73,11 +58,7 @@ function DashboardSongs() {
                         alt="images"
                       />
                     }
-                  >
-                    {/* <Meta
-                title={song.songName}
-                description={song.category}
-              /> */}
+                  > 
                     <p>song: {song.songName} </p>
                     <p>category: {song.category} </p>
                     <p>artist: {song.artistName} </p>
@@ -97,22 +78,7 @@ function DashboardSongs() {
           )}
         </div>
       )}
-      {view == "addSongs" && (
-        <div>
-          {" "}
-          <h1> Add New Song </h1>
-          <Button
-            onClick={() => {
-              setView("songs");
-              getSongs();
-            }}
-          >
-            {" "}
-            Back
-          </Button>
-          <DashboardNewSongs setView={setView} getSongs={getSongs} />
-        </div>
-      )}
+   
     </>
   );
 }
@@ -128,4 +94,4 @@ function DashboardSongs() {
 //   );
 // };
 
-export default DashboardSongs;
+export default AudioPlayerComp;

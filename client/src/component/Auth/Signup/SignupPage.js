@@ -1,15 +1,29 @@
-import React from "react";  
+import React, { useState } from "react";
 import { AssetsImage } from "../../../constants/AssetsConstant";
 import { useNavigate } from "react-router-dom";
-import { Form, Input, Button, Checkbox, Row, Col, Divider, Select } from "antd";
+import {
+  Form,
+  Input,
+  Button,
+  Checkbox,
+  Row,
+  Col,
+  Divider,
+  Select,
+  message,
+} from "antd";
 import "./SignupPage.scss";
 import { CustomImage, CustomInput } from "../../../components";
 import HeaderPage from "../../../Header/Header";
+import axios from "axios";
 
 const { Password } = Input;
 
 const SignupPage = () => {
   const navigate = useNavigate();
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const [form] = Form.useForm();
   const { Option } = Select;
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
@@ -19,15 +33,48 @@ const SignupPage = () => {
       </Select>
     </Form.Item>
   );
+  const handleOnFinish = async (values) => {
+    console.log(values);
+    const { email, password, username, phone } = values;
+    const data = {
+      email,
+      password,
+      username,
+      phone,
+    };
+
+    try {
+      const res = await axios.post(
+        "http://localhost:4000/api/auth/sigin",
+        data
+      );
+      if (res.status === 200) {
+        messageApi.open({
+          type: "success",
+          content: "Sigup sucessfully completed, please login",
+        });
+        form.resetFields()
+      }
+    } catch (e) {
+      messageApi.open({
+        type: "error",
+        content: "something went wrong try again, with new email",
+      });
+    }
+  };
 
   return (
     <>
       <div className="signup-container">
-        <HeaderPage />
+        {contextHolder} <HeaderPage />
         <div className="signup_content">
           <Row>
             <Col span={12}>
-              <CustomImage src={AssetsImage.SignupImage} alt="product" preview={false} />
+              <CustomImage
+                src={AssetsImage.SignupImage}
+                alt="product"
+                preview={false}
+              />
             </Col>
             <Col span={12}>
               <div className="signup_inputFields">
@@ -35,18 +82,18 @@ const SignupPage = () => {
                   Sign <span>up</span>
                 </h1>
                 <Divider />
-                <Form>
+                <Form form={form} onFinish={handleOnFinish}>
                   <Form.Item
-                    name="Full Name"
+                    name="username"
                     rules={[
                       {
                         required: true,
-                        type: "Full Name",
-                        message: "Please input your full Name!",
+                        type: "username",
+                        message: "Please input your username!",
                       },
                     ]}
                   >
-                    <CustomInput placeholder="Full Name" />
+                    <CustomInput placeholder="username" />
                   </Form.Item>
                   <Form.Item
                     name="email"
@@ -58,7 +105,7 @@ const SignupPage = () => {
                       },
                     ]}
                   >
-                    <CustomInput placeholder="Email ID" />
+                    <CustomInput placeholder="email ID" />
                   </Form.Item>
                   <Form.Item
                     name="phone"
@@ -94,7 +141,8 @@ const SignupPage = () => {
                     <div className="check_me">
                       <Form.Item name="remember" valuePropName="checked">
                         <Checkbox>
-                          I agree to the Terms and conditions of Orbit Capital Services.
+                          I agree to the Terms and conditions of Orbit Capital
+                          Services.
                         </Checkbox>
                       </Form.Item>
                     </div>
@@ -108,7 +156,8 @@ const SignupPage = () => {
               </div>
               <div className="signup_Signup_tag">
                 <h4>
-                  Already have an acoount ?<span onClick={() => navigate("/login")}> Login</span>
+                  Already have an acoount ?
+                  <span onClick={() => navigate("/login")}> Login</span>
                 </h4>
               </div>
             </Col>

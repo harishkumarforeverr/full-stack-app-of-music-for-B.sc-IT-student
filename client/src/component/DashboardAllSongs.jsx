@@ -9,26 +9,16 @@ import "./DashboardSongs.css";
 import { updateLastListenedSong } from "./apis/updateUserInfo";
 
 const { Meta } = Card;
-function DashboardSongs() {
+function DashboardAllSongs() {
   const [songs, setSongs] = useState([]);
   const getSongs = async () => {
     const res = await axios.get("http://localhost:4000/api/songs");
-    console.log("jvdhsvad", res);
+   
     setSongs(res.data.data);
   };
-
-  const getLastPlayedCategorySongs = async () => {
-    const userId = localStorage.getItem("userId");
-    const res = await axios.get("http://localhost:4000/api/userInfo/" + userId);
-    if (res.status == 200) {
-      const data = res.data.data;
-      setSongs(data);
-      console.log("harishshshs", res);
-    }
-  };
+ 
   useEffect(() => {
-    // getSongs();
-    getLastPlayedCategorySongs();
+    getSongs(); 
   }, []);
   const [play, setPlay] = useState("");
   const [view, setView] = useState("songs");
@@ -128,4 +118,4 @@ function DashboardSongs() {
 //   );
 // };
 
-export default DashboardSongs;
+export default DashboardAllSongs;

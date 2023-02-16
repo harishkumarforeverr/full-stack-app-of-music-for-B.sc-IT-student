@@ -1,130 +1,140 @@
 import { Button, Card, Divider } from "antd";
-import React,{useState} from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { CustomButton } from "../../components";
 import "./RecommendationCard.scss";
 const { Meta } = Card;
-const CustomCards = ({ value, description, url, selected }) => (
+const CustomCards = ({ label, url, selected,index,onClick }) => (
   <Card
-    className={selected ? "boxshadow" : ""}
+  onClick={()=>{
+    onClick(index)
+  }}
+    className={selected ? "selectedClass" : ""}
     hoverable
     style={{
       width: 240,
     }}
     cover={<img alt="example" src={url} />}
   >
-    <Meta title={value} description={description} />
+    <Meta title={label} description={""} />
   </Card>
 );
-const listObj = {
-  language: [
-    {
-      selected: false,
-      value: "hindi",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "other",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-  ],
-  category: [
-    {
-      selected: true,
-      value: "Romantic Songs (20)",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "hipup Songs (20)",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "honey sing Songs (20)",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "sad Songs (20)",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "love Songs (20)",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "top Songs (20)",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "trending Songs (20)",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-  ],
-  Artists: [
-    {
-      selected: false,
-      value: "Arijit Singh",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      description: "ssssss",
-      value: "Pritam",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "Vishal-Shekhar",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "Armaan Malik",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "Lata Mangeshkar",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-    {
-      selected: false,
-      value: "Amit Trivedi",
-      description: "ssssss",
-      url: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-    },
-  ],
-};
+
 const RecommendationCard = () => {
-  const [list,setList]=useState(listObj)
-  
+  const location = useLocation();
+  const [language, setLanguage] = useState([]);
+  const [category, setCategory] = useState([]);
+  const [artist, setArtist] = useState([]);
+
+  useEffect(() => {
+    const { language, category, artist } = location.state.data;
+    const updatedLanguage = language.map(({ label, url }) => ({
+      label,
+      url,
+      selected: false,
+    }));
+    const updatedcategory = category.map(({ value, url }) => ({
+      label:value,
+      url,
+      selected: false,
+    }));
+    const updatedartist = artist.map(({ items }) => ({
+      label: items.artistName,
+      url: items.artistImage,
+      selected: false,
+    }));
+    console.log(
+      "updatedLanguage",
+      updatedLanguage,
+      updatedartist,
+      updatedcategory
+    );
+    setLanguage(updatedLanguage);
+    setCategory(updatedcategory);
+    setArtist(updatedartist);
+  }, [location]);
+  const handleTheSelectLanguage = (index, type) => {
+    if (type == "language") {
+      const updatedLanguage = language.map((obj, i) => {
+        if (index == i) {
+          return {
+            ...obj,
+            selected: true,
+          };
+        }
+        return {
+          ...obj,
+          selected: false,
+        };
+      });
+      setLanguage(updatedLanguage);
+    }
+    if (type == "category") {
+      const updatedcategory = category.map((obj, i) => {
+        if (index == i) {
+          return {
+            ...obj,
+            selected: true,
+          };
+        }
+        return {
+          ...obj,
+          selected: false,
+        };
+      });
+      setCategory(updatedcategory);
+    }
+    if (type == "artist") {
+      const updatedartist = artist.map((obj, i) => {
+        if (index == i) {
+          return {
+            ...obj,
+            selected: true,
+          };
+        }
+        return {
+          ...obj,
+          selected: false,
+        };
+      });
+      setArtist(updatedartist);
+    }
+  };
+  const navigator=useNavigate()
+  const handleTheSubmit=async()=>{
+    const updatedlanguage=language.filter(({selected})=>selected);
+    const updatedcategory=category.filter(({selected})=>selected);
+    const updatedartist=artist.filter(({selected})=>selected);
+    if(updatedlanguage.length>0&&updatedcategory.length>0&&updatedartist.length>0){
+      const updatedData={
+        language:updatedlanguage,
+        category:updatedcategory,
+        artist:updatedartist
+      } 
+      const userId=localStorage.getItem("userId")
+      const res=await axios.post("http://localhost:4000/api/userInfo/"+userId,{
+        favCat:updatedData
+      })
+      if(res.status==200){
+        navigator("/Dashboard/home")
+      }
+      
+    }
+  }
   return (
     <div>
       <h1> select the language</h1>
       <div className="customCards">
         {" "}
-        {list.language.map(({ value, description, url, selected }) => {
+        {language.map(({ label , url, selected },index) => {
           return (
-            <CustomCards
-              value={value}
-              description={description}
+            <CustomCards  key={index}
+            onClick={(index)=>{
+              handleTheSelectLanguage(index,"language")
+            }}
+              label={label} 
+              index={index}
               url={url}
               selected={selected}
             />
@@ -136,15 +146,10 @@ const RecommendationCard = () => {
       <h1> select the category</h1>
       <div className="customCards spaceBtn">
         {" "}
-        {list.category.map(({ value, description, url, selected }) => {
-          return (
-            <CustomCards
-              value={value}
-              description={description}
-              url={url}
-              selected={selected}
-            />
-          );
+        {category.map(({ label, url, selected },index) => {
+          return <CustomCards  key={index} onClick={(index)=>{
+              handleTheSelectLanguage(index,"category")
+            }} label={label} url={url} selected={selected} index={index} />;
         })}
       </div>
       <Divider />
@@ -152,23 +157,21 @@ const RecommendationCard = () => {
       <h1> select the Artists</h1>
       <div className="customCards spaceBtn">
         {" "}
-        {list.Artists.map(({ value, description, url, selected }) => {
-          return (
-            <CustomCards
-              value={value}
-              description={description}
-              url={url}
-              selected={selected}
-            />
-          );
+        {artist.map(({ label, url, selected },index) => {
+          return <CustomCards key={index} onClick={(index)=>{
+              handleTheSelectLanguage(index,"artist")
+            }} label={label} url={url} selected={selected} index={index} />;
         })}
       </div>
       <Divider />
       <div className="recommedButton_container">
         <CustomButton
-        className="recommedButton"
-         type="primary" htmlType="submit">
-          Subnit
+          className="recommedButton"
+          type="primary"
+          htmlType="submit"
+          onClick={handleTheSubmit}
+        >
+          submit
         </CustomButton>
       </div>
     </div>

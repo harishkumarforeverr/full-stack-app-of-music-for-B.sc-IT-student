@@ -13,16 +13,16 @@ app.get("/", (req, res) => {
 });
 
 //users authentication route
-const userRoute = require("./routes/auth");
-app.use("/api/users/", userRoute);
+// const userRoute = require("./routes/auth");
+// app.use("/api/users/", userRoute);
 
 //Artist routes
-const artistsRoutes = require("./routes/artist");
-app.use("/api/artists/", artistsRoutes);
+// const artistsRoutes = require("./routes/artist");
+// app.use("/api/artists/", artistsRoutes);
 
-// Albums routes
-const albumsRoutes = require("./routes/albums");
-app.use("/api/albums/", albumsRoutes);
+// // Albums routes
+// const albumsRoutes = require("./routes/albums");
+// app.use("/api/albums/", albumsRoutes);
 
 //Songs routes
 
@@ -37,7 +37,8 @@ app.use("/api/auth/", require("./routes/login"));
 
 app.use("/api/userInfo", require("./routes/UserInfo/UserInfo"))
 app.use("/api/songs", require("./routes/songs/songs"))
-
+app.use("/api/songsCategory", require("./routes/songsCategory/songsCategory"))
+// songsCategory
 mongoose.connect(process.env.DB_STRING, { useNewUrlParser: true });
 
 mongoose.connection

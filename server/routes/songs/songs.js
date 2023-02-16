@@ -46,7 +46,7 @@ const { body, validationResult } = require("express-validator");
 const express = require("express");
 const router = express.Router();
 const Songs = require("../../modules/songs/songs");
-
+const SongsCategory =require("../../modules/songsCategory/songsCategory")
 // router.get("/", async (req, res) => {
 //   res.status(200).send("something went!");
 // });
@@ -85,6 +85,86 @@ router.get("/", async (req, res) => {
   try {
     var newSong = await Songs.find({});
     res.status(200).json({ status: 200, message: "add  ", data: newSong });
+  } catch (e) {
+    res.status(500).send({
+      message: "something went wrong try again",
+      error: e,
+    });
+  }
+});
+
+router.get("/category", async (req, res) => {
+  try {
+    const category = await SongsCategory.find({})
+    
+    return res.status(200).json({
+      status: 200,
+      message: "Login Successfully",
+      data: category,
+    });
+    // var newSong = await Songs.find({});
+    // res.status(200).json({ status: 200, message: "add  ", data: newSong });
+  } catch (e) {
+    res.status(500).send({
+      message: "something went wrong try again",
+      error: e,
+    });
+  }
+});
+
+
+router.get("/artist", async (req, res) => {
+  try {
+    const artistName = await Songs.aggregate([
+      { $group: { _id: "$artistName", items: { $push: "$$ROOT" } } },
+      { $project: { items: { $slice: ["$items", 1] } } },
+      { $unwind : "$items" }
+    ]);
+    return res.status(200).json({
+      status: 200,
+      message: "Login Successfully",
+      data: artistName,
+    });
+    // var newSong = await Songs.find({});
+    // res.status(200).json({ status: 200, message: "add  ", data: newSong });
+  } catch (e) {
+    res.status(500).send({
+      message: "something went wrong try again",
+      error: e,
+    });
+  }
+});
+
+router.get("/artistList/:artistName", async (req, res) => {
+  try {
+    const artistName=req.params.artistName
+    const artistlist = await Songs.find({artistName});
+    return res.status(200).json({
+      status: 200,
+      message: "Login Successfully",
+      data: artistlist,
+    });
+    // var newSong = await Songs.find({});
+    // res.status(200).json({ status: 200, message: "add  ", data: newSong });
+  } catch (e) {
+    res.status(500).send({
+      message: "something went wrong try again",
+      error: e,
+    });
+  }
+});
+
+router.get("/category/:category", async (req, res) => {
+  try {
+    const category=req.params.category
+    const categoryList = await Songs.find({category});
+    return res.status(200).json({
+      status: 200,
+      message: "Login Successfully",
+      data: categoryList,
+    });
+    // var newSong = await Songs.find({});
+    // res.status(200).json({ status: 200, message: "add  ", data: newSong });
   } catch (e) {
     res.status(500).send({
       message: "something went wrong try again",

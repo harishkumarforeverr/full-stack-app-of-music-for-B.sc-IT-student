@@ -46,27 +46,31 @@ const { body, validationResult } = require("express-validator");
 const express = require("express");
 const router = express.Router();
 const UserInfoSchema = require("../../modules/UserInfo/UserInfo");
-
+const Songs = require("../../modules/songs/songs");
 router.get("/", async (req, res) => {
   res.status(200).send("something went!");
 });
 
-router.get(
+router.post(
   "/:id",
-  [body("userId").isEmail().withMessage("userId must be valid")],
+  [
+    body("userId").isEmail().withMessage("userId must be valid"),
+    body("favCat").isEmail().withMessage("favCat must be valid"),
+  ],
   async (req, res) => {
     const { id } = req.params;
-
+    let reqBody = req.body;
     const findUserIfExist = await UserInfoSchema.findOne({
       userId: ObjectId(id),
     });
     if (findUserIfExist) {
-     
+      return res
+        .status(400)
+        .json({ status: 400, message: "user already exist", data: [] });
     } else {
-      var newuser = new UserInfoSchema(); 
+      var newuser = new UserInfoSchema();
       newuser.userId = id;
-      // newuser.username = username;
-      // newuser.phone = phone;
+      newuser.favCat = reqBody.favCat;
       newuser
         .save()
         .then(async () => {
@@ -79,55 +83,59 @@ router.get(
             .status(400)
             .json({ status: 400, message: e, status: "Error" });
         });
-    }
-    // } catch (e) {
-    //   res.status(500).send({
-    //     message: "something went wrong try again",
-    //     error: e,
-    //   });
-    // }
+    } 
   }
 );
-router.put(
-  "/:id", 
-  async (req, res) => {
-    const { id } = req.params;
+router.get("/:id", async (req, res) => { 
+  const { id } = req.params;
 
-    const findUserIfExist = await UserInfoSchema.findOne({
-      userId: ObjectId(id),
-    });
-    if (findUserIfExist) {
-      console.log("findUserIfExist",findUserIfExist)
-      const result =await UserInfoSchema.findOneAndUpdate({userId: ObjectId(id)},{
-        favCat:req.body.favCat
-      }, { 
-        new: true,
-      })
-      res.status(200).send({ user: result });
-    } else { 
-      // newuser.username = username;
-      // newuser.phone = phone;
-      // newuser
-      //   .save()
-      //   .then(async () => {
-      //     return
-           res
-            .status(201)
-            .json({ status: 201, message: "No user found", data:  [] });
-        // })
-        // .catch((e) => {
-        //   return res
-        //     .status(400)
-        //     .json({ status: 400, message: e, status: "Error" });
-        // });
-    }
-    // } catch (e) {
-    //   res.status(500).send({
-    //     message: "something went wrong try again",
-    //     error: e,
-    //   });
-    // }
+  const findUserIfExist = await UserInfoSchema.findOne({
+    userId: ObjectId(id),
+  });
+  console.log("findUserIfExist",findUserIfExist)
+  if (findUserIfExist.lastMusicCatId) {
+    const category = findUserIfExist.lastMusicCatId;
+    var newSong = await Songs.find({ category });
+    return res
+      .status(200)
+      .json({ status: 200, message: "add  ", data: newSong });
+  } else { 
+    const category = findUserIfExist.favCat.category[0].label;
+
+    var newSong = await Songs.find({ category });
+    return res
+      .status(200)
+      .json({ status: 200, message: "add  ", data: newSong });
   }
-);
+  // } catch (e) {
+  //   res.status(500).send({
+  //     message: "something went wrong try again",
+  //     error: e,
+  //   });
+  // }
+});
+router.put("/:id/:lastMusicCatId", async (req, res) => {
+  // try {
+  const { id } = req.params;
+
+  const findUserIfExist = await UserInfoSchema.findOneAndUpdate(
+    {
+      userId: ObjectId(id),
+    },
+    { lastMusicCatId: req.params.lastMusicCatId },
+    { new: true }
+  );
+  return res.status(200).json({
+    status: 200,
+    message: "Payment Status Updated",
+    data: findUserIfExist,
+  });
+  // } catch (e) {
+  //   res.status(500).send({
+  //     message: "something went wrong try again",
+  //     error: e,
+  //   });
+  // }
+});
 
 module.exports = router;

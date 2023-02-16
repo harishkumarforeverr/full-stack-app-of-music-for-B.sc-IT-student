@@ -11,16 +11,10 @@ let UserInfoSchema = Schema(
       require: true,
     },
     favCat: {
-      type: Array,
-      required: true,
-      trim: true,
-      minlength: 1,
+      type: Object, 
     }, 
     lastMusicCatId: {
-      type: Schema.Types.ObjectId,
-      required: true,
-      trim: true,
-      minlength: 1,
+      type: String 
     }, 
   },
   { versionKey: false, timestamps: true, collection: "UserInfo" }

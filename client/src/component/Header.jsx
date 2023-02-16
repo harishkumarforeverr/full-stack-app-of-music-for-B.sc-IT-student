@@ -8,6 +8,7 @@ import { getAuth } from "firebase/auth";
 import { motion } from "framer-motion";
 
 import { FaCrown } from "react-icons/fa";
+import { Button, Popover } from "antd";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -25,6 +26,29 @@ const Header = () => {
     //   .catch((e) => console.log(e));
     navigate("/login", { replace: true });
   };
+  const content = (
+    <div style={{
+      cursor:"pointer"
+    }}>
+      <p> Profile</p>
+      <p> My Favourites</p>
+      <hr />
+      <p onClick={()=>{
+        
+        navigator("/Dashboard/Home")
+      }}> Dashboard</p>
+      <p
+        onClick={() => {
+          localStorage.removeItem("accessToken");
+          localStorage.removeItem("userId");
+          navigate("/login");
+        }}
+      >
+        {" "}
+        Logout
+      </p>
+    </div>
+  );
 
   return (
     <header className="flex items-center w-full p-4 md:py-2 md:px-6">
@@ -90,13 +114,21 @@ const Header = () => {
           <p className="text-textColor text-lg hover:text-headingColor font-semibold">
             {user?.user?.name}
           </p>
-          <p className="flex items-center gap-2 text-xs text-gray-500 font-normal">
-            Premium Member.{" "}
-            <FaCrown className="text-xm -ml-1 text-yellow-500" />{" "}
+          <p className="flex items-center gap-2 text-xs text-gray-500 font-normal"
+          
+          >
+            <Popover content={content} title="Title" trigger="hover">
+              <div style={{
+                display:"flex"
+              }}>
+              <Button>Premium Member</Button> <FaCrown className="text-xm -ml-1 text-yellow-500" />{" "}
+              </div>
+            </Popover>
+           
           </p>
         </div>
 
-        {isMenu && (
+        {/* {isMenu && (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -114,7 +146,7 @@ const Header = () => {
 
             <hr />
 
-            {user?.user?.role === "admin" && (
+         
               <>
                 <NavLink to={"/Dashboard/Home"}>
                   <p className="text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out">
@@ -123,7 +155,7 @@ const Header = () => {
                 </NavLink>
                 <hr />
               </>
-            )}
+         
 
             <p
               className="text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out"
@@ -132,7 +164,7 @@ const Header = () => {
               Sign out
             </p>
           </motion.div>
-        )}
+        )} */}
       </div>
     </header>
   );

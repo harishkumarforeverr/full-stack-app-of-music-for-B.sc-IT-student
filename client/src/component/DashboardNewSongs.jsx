@@ -227,11 +227,7 @@ const options = [
   {
     value: "RomaticSong",
     label: "Romatic Song",
-  },
-  {
-    value: "Rock",
-    label: "Rock",
-  },
+  }, 
   {
     value: "SadSong",
     label: "Sad Song",
