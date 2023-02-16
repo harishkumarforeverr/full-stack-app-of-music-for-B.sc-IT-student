@@ -87,8 +87,7 @@ const SignupPage = () => {
                     name="username"
                     rules={[
                       {
-                        required: true,
-                        type: "username",
+                        required: true, 
                         message: "Please input your username!",
                       },
                     ]}

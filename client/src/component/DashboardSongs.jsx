@@ -1,4 +1,5 @@
 import axios from "axios";
+import { DownloadOutlined } from "@ant-design/icons";
 import React, { useEffect, useState } from "react";
 import { Button, Card } from "antd";
 import AudioPlayer from "react-h5-audio-player";
@@ -56,8 +57,11 @@ function DashboardSongs() {
                 <div>
                   <Card
                     onClick={() => {
-                      setPlay(song.song);
-                      updateLastListenedSong(song.category,localStorage.getItem("userId"))
+                      setPlay(song);
+                      updateLastListenedSong(
+                        song.category,
+                        localStorage.getItem("userId")
+                      );
                     }}
                     hoverable
                     style={{
@@ -88,9 +92,19 @@ function DashboardSongs() {
           </div>
           {play !== "" && (
             <div className="musicplayerConatiner">
+              <div className="songsDeatiles">
+                <p><span>Song Name </span>: {play.songName} </p>
+                <p><span>Category </span>: {play.category} </p>
+                <p><span>Artist </span>: {play.artistName} </p>
+                <p  style={{
+                  cursor:"pointer"
+                }}>
+                  <span>Download</span> : <DownloadOutlined />
+                </p>
+              </div>
               <AudioPlayer
                 autoPlay
-                src={play}
+                src={play.song}
                 onPlay={(e) => console.log("onPlay")}
               />
             </div>

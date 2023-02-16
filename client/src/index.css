@@ -51,15 +51,15 @@
 .rhap_volume-bar {
   background-color: #ff000033;
 }
-.ant-card-cover img{
+.ant-card-cover img {
   width: 100%;
   height: 9rem;
 }
-.musicplayerConatiner{
+.musicplayerConatiner {
   position: fixed;
   bottom: 0px;
   box-shadow: 0 1px 2px -2px #00000029, 0 3px 6px 0 #0000001f,
-  0 5px 12px 4px #00000017;
+    0 5px 12px 4px #00000017;
   background: white;
   width: 96%;
   margin: 0 auto;
@@ -67,4 +67,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.songsDeatiles {
+  height: 8rem;
+  /* min-width: 16rem; */
+  width:30%;
+  box-shadow: 0 1px 2px -2px #00000029, 0 3px 6px 0 #0000001f,
+    0 5px 12px 4px #00000017;
+  background: white;
+  display: grid;
+  /* justify-content: center; */
+  padding-left: 2%;
+  align-items: center;
+}
+.songsDeatiles span {
+  color: #099268;
+  font-size: 1.3rem;
+}
+
+.songsDeatiles p {
+  color: #038aa1;
+  white-space: nowrap;
+  font-size: 1.1rem;
 }

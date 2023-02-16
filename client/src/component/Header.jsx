@@ -8,7 +8,7 @@ import { getAuth } from "firebase/auth";
 import { motion } from "framer-motion";
 
 import { FaCrown } from "react-icons/fa";
-import { Button, Popover } from "antd";
+import { Button, Input, Popover } from "antd";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -27,16 +27,22 @@ const Header = () => {
     navigate("/login", { replace: true });
   };
   const content = (
-    <div style={{
-      cursor:"pointer"
-    }}>
+    <div
+      style={{
+        cursor: "pointer",
+      }}
+    >
       <p> Profile</p>
       <p> My Favourites</p>
       <hr />
-      <p onClick={()=>{
-        
-        navigator("/Dashboard/Home")
-      }}> Dashboard</p>
+      <p
+        onClick={() => {
+          navigator("/Dashboard/Home");
+        }}
+      >
+        {" "}
+        Dashboard
+      </p>
       <p
         onClick={() => {
           localStorage.removeItem("accessToken");
@@ -98,6 +104,13 @@ const Header = () => {
           </NavLink>
         </li>
       </ul>
+      <div style={{
+          width:"50%"
+        }}>
+        <Input style={{
+          width:"100%"
+        }} placeholder="global search" />
+      </div>
 
       <div
         className="flex items-center ml-auto cursor-pointer gap-2 relative"
@@ -114,17 +127,17 @@ const Header = () => {
           <p className="text-textColor text-lg hover:text-headingColor font-semibold">
             {user?.user?.name}
           </p>
-          <p className="flex items-center gap-2 text-xs text-gray-500 font-normal"
-          
-          >
+          <p className="flex items-center gap-2 text-xs text-gray-500 font-normal">
             <Popover content={content} title="Title" trigger="hover">
-              <div style={{
-                display:"flex"
-              }}>
-              <Button>Premium Member</Button> <FaCrown className="text-xm -ml-1 text-yellow-500" />{" "}
+              <div
+                style={{
+                  display: "flex",
+                }}
+              >
+                <Button>Premium Member</Button>{" "}
+                <FaCrown className="text-xm -ml-1 text-yellow-500" />{" "}
               </div>
             </Popover>
-           
           </p>
         </div>
 
