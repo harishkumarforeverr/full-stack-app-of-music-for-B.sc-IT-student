@@ -19,7 +19,7 @@ router.post(
   async (req, res) => {
     // try {
       const { email, password } = req.body;
-      const findUserIfExist = await User.findOne({ email });
+      const findUserIfExist = await User.findOne({ email,password });
       console.log(findUserIfExist)
       if (findUserIfExist) {
         const userInfo = await UserInfoSchema.find({

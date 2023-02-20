@@ -227,13 +227,13 @@ const options = [
   {
     value: "RomaticSong",
     label: "Romatic Song",
-  }, 
+  },
   {
     value: "SadSong",
     label: "Sad Song",
   },
 ];
-const DashboardNewSongs = ({setView,getSongs}) => {
+const DashboardNewSongs = ({ setView, getSongs }) => {
   const [artistName, setArtistName] = useState("");
   const [artistImage, setArtistImage] = useState("");
   const [songName, setSongName] = useState("");
@@ -257,10 +257,13 @@ const DashboardNewSongs = ({setView,getSongs}) => {
         song,
         category,
       };
-      const res=await axios.post("http://localhost:4000/api/songs",updateData)
-      console.log("updateData", updateData,res);
-      setView("songs")
-      getSongs()
+      const res = await axios.post(
+        "http://localhost:4000/api/songs",
+        updateData
+      );
+      console.log("updateData", updateData, res);
+      setView("songs");
+      getSongs();
     }
   };
   return (
@@ -326,14 +329,25 @@ const DashboardNewSongs = ({setView,getSongs}) => {
 
         <div>
           <h1>upload The Artists Image</h1>
+          {artistImage !== "" && <img style={{width:"5rem", height:"5rem"}} src={artistImage} alt="artistImage" />}
           <GetUrlFromFireBase setUrl={setArtistImage} type="image" />
         </div>
         <div>
           <h1>upload The Song Image</h1>
+          {songImage !== "" && <img style={{width:"5rem", height:"5rem"}} src={songImage} alt="songImage" />}
           <GetUrlFromFireBase setUrl={setSongImage} type="image" />
         </div>
         <div>
           <h1>upload The Song </h1>
+
+          {song !== "" && (
+            <>
+              <audio controls>
+                <source src={song} type="audio/mpeg" />
+                Your browser does not support the audio tag.
+              </audio>
+            </>
+          )}
           <GetUrlFromFireBase setUrl={setSong} type="song" />
         </div>
       </div>

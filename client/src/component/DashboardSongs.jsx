@@ -33,6 +33,41 @@ function DashboardSongs() {
   }, []);
   const [play, setPlay] = useState("");
   const [view, setView] = useState("songs");
+  
+  const handleTheSongChange = (id, sign) => {
+    const index = songs.findIndex(({ _id }) => {
+      let bool = _id == id;
+      console.log(id, _id, bool);
+      return bool;
+    });
+    console.log("songsong", index);
+    if (index == 0) {
+      let i = 0;
+      if (sign == "+") {
+        i = index + 1;
+      } else {
+        i = songs.length - 1;
+      }
+      const newObj = { ...songs[i] };
+      setPlay(newObj);
+    } else if (index === songs.length - 1) {
+      let i = 0;
+      if (sign == "+") {
+        i = 0;
+      } else {
+        i = index - 1;
+      }
+      const newObj = { ...songs[i] };
+      setPlay(newObj);
+    } else {
+      let ii = null;
+      if (sign == "+") ii = Number(index) + Number(1);
+      else ii = Number(index) - Number(1);
+      const newObj = { ...songs[ii] };
+      console.log("newObjnewObj", ii, index);
+      setPlay(newObj);
+    }
+  };
   return (
     <>
       {view == "songs" && (
@@ -106,6 +141,13 @@ function DashboardSongs() {
                 autoPlay
                 src={play.song}
                 onPlay={(e) => console.log("onPlay")}
+                showSkipControls={true}
+                onClickNext={() => {
+                  handleTheSongChange(play._id, "+");
+                }}
+                onClickPrevious={() => {
+                  handleTheSongChange(play._id, "-");
+                }}
               />
             </div>
           )}
