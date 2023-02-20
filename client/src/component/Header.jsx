@@ -85,12 +85,12 @@ const Header = () => {
         </li>
         <li className="mx-5 text-lg">
           <NavLink
-            to={"/premium"}
+            to={"/Dashboard/home"}
             className={({ isActive }) =>
               isActive ? isActiveStyles : isNotActiveStyles
             }
           >
-            Premium
+            Dashboard
           </NavLink>
         </li>
         <li className="mx-5 text-lg ">
