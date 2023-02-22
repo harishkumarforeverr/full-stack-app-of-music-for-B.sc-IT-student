@@ -128,14 +128,20 @@ function DashboardSongs() {
           {play !== "" && (
             <div className="musicplayerConatiner">
               <div className="songsDeatiles">
-                <p><span>Song Name </span>: {play.songName} </p>
-                <p><span>Category </span>: {play.category} </p>
-                <p><span>Artist </span>: {play.artistName} </p>
-                <p  style={{
-                  cursor:"pointer"
+               
+                <div>
+                  <img style={{
+                    width:"80%"
+                  }} src={play.songImage} alt="ok" />
+                </div>
+                <div style={{
+                  flexBasis:"70%"
                 }}>
-                  <span>Download</span> : <DownloadOutlined />
-                </p>
+                  <p>{play.songName}</p>
+                  <p> {play.artistName}</p>
+                </div>
+
+
               </div>
               <AudioPlayer
                 autoPlay

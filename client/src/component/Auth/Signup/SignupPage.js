@@ -53,7 +53,7 @@ const SignupPage = () => {
           type: "success",
           content: "Sigup sucessfully completed, please login",
         });
-        form.resetFields()
+        form.resetFields();
       }
     } catch (e) {
       messageApi.open({
@@ -87,7 +87,7 @@ const SignupPage = () => {
                     name="username"
                     rules={[
                       {
-                        required: true, 
+                        required: true,
                         message: "Please input your username!",
                       },
                     ]}
@@ -130,6 +130,17 @@ const SignupPage = () => {
                         {
                           required: true,
                           message: "Please input your password!",
+                        },
+                        {
+                          whitespace: true,
+                          message: "Remember to fill in the title",
+                        },
+                        {
+                          pattern: new RegExp(
+                            /((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15})/
+                          ),
+                          message:
+                            "Password should be 6 to 15 characters long with at least one uppercase letter, one lowercase letter and one digit",
                         },
                       ]}
                     >

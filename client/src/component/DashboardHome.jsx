@@ -62,7 +62,7 @@ const DashBoardHome = () => {
         }}
         icon={<FaUsers className="text-3xl text-textColor" />}
         name={"Users"}
-      />
+      /> 
     </div>
   );
 };
