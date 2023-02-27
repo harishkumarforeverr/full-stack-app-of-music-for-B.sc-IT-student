@@ -83,23 +83,23 @@ router.post(
             .status(400)
             .json({ status: 400, message: e, status: "Error" });
         });
-    } 
+    }
   }
 );
-router.get("/:id", async (req, res) => { 
+router.get("/:id", async (req, res) => {
   const { id } = req.params;
 
   const findUserIfExist = await UserInfoSchema.findOne({
     userId: ObjectId(id),
   });
-  console.log("findUserIfExist",findUserIfExist)
+  console.log("findUserIfExist", findUserIfExist);
   if (findUserIfExist.lastMusicCatId) {
     const category = findUserIfExist.lastMusicCatId;
     var newSong = await Songs.find({ category });
     return res
       .status(200)
       .json({ status: 200, message: "add  ", data: newSong });
-  } else { 
+  } else {
     const category = findUserIfExist.favCat.category[0].label;
 
     var newSong = await Songs.find({ category });
@@ -130,6 +130,150 @@ router.put("/:id/:lastMusicCatId", async (req, res) => {
     message: "Payment Status Updated",
     data: findUserIfExist,
   });
+  // } catch (e) {
+  //   res.status(500).send({
+  //     message: "something went wrong try again",
+  //     error: e,
+  //   });
+  // }
+});
+
+router.put("/recentlyPlayed", async (req, res) => {
+  const { body } = req;
+
+  const findUserIfExist = await UserInfoSchema.findOne({
+    userId: ObjectId(body.userId),
+  });
+  console.log("findUserIfExist", body);
+  // console.log("findUserIfExist",findUserIfExist)
+  if (findUserIfExist) {
+    const updatedUser = await UserInfoSchema.updateOne(
+      { userId: ObjectId(body.userId) },
+      { $push: { lastplayedMusicsIds: {songId:ObjectId(body.songId),userId:ObjectId(body.userId) }} }
+    );
+
+    return res
+      .status(200)
+      .json({ status: 200, message: "add  ", data: updatedUser });
+  } else {
+    return res
+      .status(400)
+      .json({ status: 400, message: "no user found  ", data: [] });
+  }
+  // } catch (e) {
+  //   res.status(500).send({
+  //     message: "something went wrong try again",
+  //     error: e,
+  //   });
+  // }
+});
+router.get("/recentlyPlayed/:userId", async (req, res) => {
+  const { body } = req;
+
+  const findUserIfExist = await UserInfoSchema.findOne({
+    userId: ObjectId(req.params.userId),
+  });
+  console.log("findUserIfExist", body);
+  // console.log("findUserIfExist",findUserIfExist)
+  if (findUserIfExist) {
+    //  const updatedUser= await UserInfoSchema.updateOne(
+    //     { userId:  ObjectId(body.userId)},
+    //     { $push: { lastplayedMusicsIds: ObjectId(body.songId) } }
+    //  )
+    const songsdata = await Songs.aggregate([
+      {
+        $lookup: {
+          from: "UserInfo",
+          localField: "_id",
+          foreignField: "lastplayedMusicsIds.songId",
+          as: "songsArr",
+        },
+      },
+      { $match: { $expr: { $ne: ["$songsArr", []] } } },
+    
+      {
+        $unwind: "$songsArr",
+      },
+      {
+        $unwind: "$songsArr.lastplayedMusicsIds",
+      },
+      
+      // {
+      //   $project:{
+      //     artistName:1,
+      //     artistImage:1,
+      //     songName:1,
+      //     songImage:1,
+      //     song:1,
+      //     category:1,
+      //     created_at:1,
+      //     createdBy:1,
+      //     // lastplayedTimeStamp:"$songsArr.createdBy"
+      //     // lastplayedTimeStamp: {
+      //     //   $cond: {
+      //     //     if: {
+      //     //       $eq: ['$songsArr.lastplayedMusicsIds.songId', "$_id"]
+      //     //     },
+      //     //     then: "$songsArr",
+      //     //     else: null,
+      //     //   }
+      //     // }
+      //   }
+      // }, 
+      // {
+      //   $unwind: "$songsArr.lastplayedMusicsIds",
+      // },
+    ]);
+    // const songsdata = await UserInfoSchema.aggregate([
+    //   {
+    //     $match:{
+    //       userId:ObjectId(req.params.userId)
+    //     }
+    //   },
+    //   {
+    //     $lookup: {
+    //       from: "Songs",
+    //       localField: "lastplayedMusicsIds.songId",
+    //       foreignField: "_id",
+    //       as: "songsArr",
+    //     },
+    //   },
+    //   // { $match: { $expr: { $ne: ["$songsArr", []] } } },
+    //   {
+    //     $project: { lastplayedMusicsIds: 1 },
+    //   }, 
+    //   {
+    //     $unwind:"$lastplayedMusicsIds"
+    //   },
+    //   {
+    //     $sort:{
+    //       "lastplayedMusicsIds.createdAt":-1
+    //     }
+    //   },
+    //   {
+    //     $project:{
+    //       Mid:"$lastplayedMusicsIds.songId",
+    //       _id:0
+    //     }
+    //   },
+    //   {
+    //     $lookup: {
+    //       from: "Songs",
+    //       localField: "Mid",
+    //       foreignField: "_id",
+    //       as: "songsArr",
+    //     },
+    //   },
+      
+    // ]);
+    return res
+      .status(200)
+      .json({ status: 200, message: "add  ", data: songsdata });
+  } else {
+    return res
+      .status(400)
+      .json({ status: 400, message: "no user found  ", data: [] });
+  }
   // } catch (e) {
   //   res.status(500).send({
   //     message: "something went wrong try again",

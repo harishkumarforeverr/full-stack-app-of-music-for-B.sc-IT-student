@@ -33,7 +33,7 @@ function DashboardSongs() {
   }, []);
   const [play, setPlay] = useState("");
   const [view, setView] = useState("songs");
-  
+
   const handleTheSongChange = (id, sign) => {
     const index = songs.findIndex(({ _id }) => {
       let bool = _id == id;
@@ -117,9 +117,42 @@ function DashboardSongs() {
                 title={song.songName}
                 description={song.category}
               /> */}
-                    <p>song: {song.songName} </p>
-                    <p>category: {song.category} </p>
-                    <p>artist: {song.artistName} </p>
+                    <p
+                      style={{
+                        color: "rgba(14, 22, 176, 0.806)",
+                        fontFamily: "Open Sans",
+                        fontSize: "14px",
+                        fontWeight: "bold",
+                        textDecoration: "bold",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Song: {song.songName}{" "}
+                    </p>
+                    <p
+                      style={{
+                        color: "rgba(14, 22, 176, 0.806)",
+                        fontFamily: "Open Sans",
+                        fontSize: "14px",
+                        fontWeight: "bold",
+                        textDecoration: "bold",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Category: {song.category}{" "}
+                    </p>
+                    <p
+                      style={{
+                        color: "rgba(14, 22, 176, 0.806)",
+                        fontFamily: "Open Sans",
+                        fontSize: "14px",
+                        fontWeight: "bold",
+                        textDecoration: "bold",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Artist: {song.artistName}{" "}
+                    </p>
                   </Card>
                 </div>
               );
@@ -128,20 +161,23 @@ function DashboardSongs() {
           {play !== "" && (
             <div className="musicplayerConatiner">
               <div className="songsDeatiles">
-               
                 <div>
-                  <img style={{
-                    width:"80%"
-                  }} src={play.songImage} alt="ok" />
+                  <img
+                    style={{
+                      width: "80%",
+                    }}
+                    src={play.songImage}
+                    alt="ok"
+                  />
                 </div>
-                <div style={{
-                  flexBasis:"70%"
-                }}>
+                <div
+                  style={{
+                    flexBasis: "70%",
+                  }}
+                >
                   <p>{play.songName}</p>
                   <p> {play.artistName}</p>
                 </div>
-
-
               </div>
               <AudioPlayer
                 autoPlay

@@ -5,20 +5,21 @@ import Header from "./Header";
 import { IoHome } from "react-icons/io5";
 import { isActiveStyles, isNotActiveStyles } from "../utils/styles";
 import DashboardHome from "./DashboardHome";
-import DashboardUsers from "./DashboardUsers";
+//import DashboardUsers from "./DashboardUsers";
 import DashboardSongs from "./DashboardSongs";
 import DashboardArtists from "./DashboardArtists";
 import DashboardAlbums from "./DashboardAlbums";
 import { Alert, DashboardNewSongs } from ".";
 import { useStateValue } from "../Context/StateProvider";
 import DashboardAllSongs from "./DashboardAllSongs";
+import "./Dashboard.css";
 
 function Dashboard() {
   const [{ alertType }, dispath] = useStateValue();
   return (
-    <div className="w-full h-auto  flex flex-col items-center justify-center bg-blue-100">
+    <div className="hello w-full h-auto  flex flex-col items-center justify-center">
       <Header />
-      <div className="w-[60%] my-2 bg-red-200 p-4 flex items-center justify-evenly">
+      <div className=" hillo w-[60%] my-2 bg-red-200 p-4 flex items-center justify-evenly">
         <NavLink
           to={"/Dashboard/home"}
           className={({ isActive }) =>
@@ -27,7 +28,6 @@ function Dashboard() {
         >
           <IoHome className="text-2x1 text-textColor" />{" "}
         </NavLink>
-      
 
         <NavLink
           to={"/Dashboard/allsongs"}
@@ -35,7 +35,7 @@ function Dashboard() {
             isActive ? isActiveStyles : isNotActiveStyles
           }
         >
-          All Songs
+          <div className=" ">All Songs</div>
         </NavLink>
         <NavLink
           to={"/Dashboard/songs"}
@@ -63,19 +63,20 @@ function Dashboard() {
         >
           Albums
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to={"/Dashboard/user"}
           className={({ isActive }) =>
             isActive ? isActiveStyles : isNotActiveStyles
           }
         >
           Users
-        </NavLink>
+        </NavLink> */}
       </div>
+
       <div className="my-4 w-full p-4">
         <Routes>
           <Route path="/home" element={<DashboardHome />} />
-          <Route path="/user" element={<DashboardUsers />} />
+          {/* <Route path="/user" element={<DashboardUsers />} /> */}
           <Route path="/allsongs" element={<DashboardAllSongs />} />
           <Route path="/songs" element={<DashboardSongs />} />
           <Route path="/artist" element={<DashboardArtists />} />

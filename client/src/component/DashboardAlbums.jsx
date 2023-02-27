@@ -33,12 +33,10 @@
 //     </div>
 //   );
 // };
-import { async } from "@firebase/util";
 import { Button, Card, Divider } from "antd";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { CustomButton } from "../components";
 import AudioPlayerComp from "./AudioPlayer";
  
 import "./DashboardArtists.scss";

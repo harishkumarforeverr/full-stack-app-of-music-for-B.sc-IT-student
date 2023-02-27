@@ -132,6 +132,45 @@ router.post(
     // }
   }
 );
+router.put(
+  "/reset",
+  [
+    body("email").isEmail().withMessage("Email must be valid"),
+    body("password")
+      .trim()
+      .notEmpty()
+      .isLength({ min: 5 })
+      .withMessage("please provide a password greater than 6 digits"),
+  ],
+  async (req, res) => {
+    // try {
+      const { email, password } = req.body;
+      const findUserIfExist = await User.findOne({ email });
+      console.log(findUserIfExist)
+      if (findUserIfExist) {
+       const updatedData= await User.findOneAndUpdate({ email },{email,password},{
+        new: true
+      });
+       return res.status(200).json({
+        status: 404,
+        message: "user email updated",
+        data: updatedData,
+      });
+      } else {
+        return res.status(200).json({
+          status: 404,
+          message: "no user found",
+          data: findUserIfExist,
+        });
+      }
+    // } catch (e) {
+    //   res.status(404).send({
+    //     message: "something went wrong try again",
+    //     error: e,
+    //   });
+    // }
+  }
+);
 router.get("/", async (req, res) => {
     const findUserIfExist = await User.find({});
     console.log("findUserIfExist", findUserIfExist);

@@ -6,9 +6,11 @@ import { isActiveStyles, isNotActiveStyles } from "../utils/styles";
 import { getAuth } from "firebase/auth";
 // import { app } from "../config/firebase.config";
 import { motion } from "framer-motion";
+import { FaSearch } from "react-icons/fa";
 
 import { FaCrown } from "react-icons/fa";
 import { Button, Input, Popover } from "antd";
+import "./Header.css"; 
 
 const Header = () => {
   const navigate = useNavigate();
@@ -32,17 +34,6 @@ const Header = () => {
         cursor: "pointer",
       }}
     >
-      <p> Profile</p>
-      <p> My Favourites</p>
-      <hr />
-      <p
-        onClick={() => {
-          navigator("/Dashboard/Home");
-        }}
-      >
-        {" "}
-        Dashboard
-      </p>
       <p
         onClick={() => {
           localStorage.removeItem("accessToken");
@@ -50,7 +41,6 @@ const Header = () => {
           navigate("/login");
         }}
       >
-        {" "}
         Logout
       </p>
     </div>
@@ -104,12 +94,17 @@ const Header = () => {
           </NavLink>
         </li>
       </ul>
-      <div style={{
-          width:"50%"
-        }}>
-        <Input style={{
-          width:"100%"
-        }} placeholder="global search" />
+      <div className="search1">
+        <form>
+          <div className="search-box">
+            <input
+              type="search"
+              placeholder="Search here..."
+              className="search-input"
+            />
+            {/* <FontAwesomeIcon icon={faSearch} className="search-icon" /> */}
+          </div>
+        </form>
       </div>
 
       <div

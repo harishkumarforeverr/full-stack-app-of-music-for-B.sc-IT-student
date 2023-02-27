@@ -4,10 +4,10 @@ import "./Header.scss";
 const HeaderPage = () => {
   return (
     <>
-      <div className="Header-contianer">
-        <h1>
-          Music<span>Start</span><b> App</b>
-        </h1>
+      <div class="Header-contianer">
+        <p>
+          <span>SOUND MELODY</span>
+        </p>
       </div>
     </>
   );

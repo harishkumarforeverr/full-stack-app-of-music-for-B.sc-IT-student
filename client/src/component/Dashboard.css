@@ -1,0 +1,24 @@
+.hello {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hillo {
+  animation: changeBackgroundColor 2.5s infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #2cd9ff;
+  }
+  50% {
+    background-color: #7effb2;
+  }
+  100% {
+    background-color: #126dd4;
+  }
+}
+
+.color {
+  color: rgb(7, 234, 226);
+  text-decoration-style: solid;
+}

@@ -1,19 +1,29 @@
 @import "../Scss/base/colors";
 
+
 .Header-contianer {
-  background-color: var(--white);
-  h1 {
-    text-align: left;
-    font-family: "Poppins";
-    font-size: 4rem;
-    opacity: 0.9;
-    font-weight: 700;
-    padding-left: 5%;
-    Span {
-      color: var(--primaryOrange);
+ p span
+{
+  text-align: left;
+    
+    transform: translate(-50%,-50%);
+    font-size: 140px;
+    color: rgb(59, 87, 209);
+    background-image: url(https://freerangestock.com/sample/52905/blue-music-background-means-instruments-and-soundwaves-.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: animate 3s ease-in-out alternate infinite;
+}
+@keyframes animate
+{
+    from
+    {
+        background-position: center 40%;
     }
-    b {
-      font-weight: 700;
+    to
+    {
+        background-position: center 60%;
     }
-  }
+} 
 }

@@ -82,12 +82,16 @@
           }
         }
         .ant-btn-primary {
+          font-size: large;
           background-color: var(--primaryOrange);
           border: none;
           width: 100%;
           height: 4rem;
           background: #f06e38;
           margin-top: 1rem;
+        }
+        .ant-btn-primary:hover {
+          background-color: rgb(216, 77, 77);
         }
       }
       .ant-form-item-explain-error {
@@ -104,10 +108,16 @@
       h4 {
         opacity: 0.8;
         color: var(--black-secondary);
+        font-size: 1.4rem;
         span {
-          color: var(--primaryOrange);
+          color: red;
+          font-size: 2rem;
+          font-weight: bold;
           padding-left: 0.5rem;
           cursor: pointer;
+        }
+        span:hover {
+          color: rgb(27, 24, 202);
         }
       }
     }

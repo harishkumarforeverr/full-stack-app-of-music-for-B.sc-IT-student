@@ -28,7 +28,7 @@ const DashboardArtists = () => {
   const location = useLocation();
   const [language, setLanguage] = useState([]);
   const [category, setCategory] = useState([]);
-  const [songs,setSongs]=useState([])
+  const [songs, setSongs] = useState([]);
   const [artist, setArtist] = useState([]);
   const [view, setView] = useState("viewOne");
   const getSongs = async () => {
@@ -47,7 +47,7 @@ const DashboardArtists = () => {
     getSongs();
   }, []);
 
-  const handleTheSelectLanguage = async (index, type,label) => {
+  const handleTheSelectLanguage = async (index, type, label) => {
     const updatedartist = artist?.map((obj, i) => {
       if (index == i) {
         return {
@@ -61,20 +61,20 @@ const DashboardArtists = () => {
       };
     });
     setArtist(updatedartist);
-    const url="http://localhost:4000/api/songs/artistList/"+label;
-  
-      const res = await axios.get(url);
-      console.log("jvdhsdsaaaavad", res);
-    
-      const data=res.data.data;
-      setSongs(data)
+    const url = "http://localhost:4000/api/songs/artistList/" + label;
+
+    const res = await axios.get(url);
+    console.log("jvdhsdsaaaavad", res);
+
+    const data = res.data.data;
+    setSongs(data);
   };
 
   return (
     <div>
       {view == "viewOne" && (
         <>
-          <h1> select the Artists</h1>
+          <h1>Select the Artists</h1>
           <div className="customCards spaceBtn">
             {" "}
             {artist?.map(({ label, url, selected }, index) => {
@@ -82,9 +82,8 @@ const DashboardArtists = () => {
                 <CustomCards
                   key={index}
                   onClick={(index) => {
-                     
-                    handleTheSelectLanguage(index, "artist",label);
-                    setView("play")
+                    handleTheSelectLanguage(index, "artist", label);
+                    setView("play");
                   }}
                   label={label}
                   url={url}
@@ -98,7 +97,13 @@ const DashboardArtists = () => {
       )}
       {view == "play" && (
         <>
-        <Button onClick={()=>{setView("viewOne")}}>Back</Button>
+          <Button
+            onClick={() => {
+              setView("viewOne");
+            }}
+          >
+            Back
+          </Button>
           <AudioPlayerComp songs={songs} />
         </>
       )}

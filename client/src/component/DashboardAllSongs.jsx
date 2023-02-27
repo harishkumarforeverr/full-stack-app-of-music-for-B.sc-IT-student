@@ -14,12 +14,12 @@ function DashboardAllSongs() {
   const [songs, setSongs] = useState([]);
   const getSongs = async () => {
     const res = await axios.get("http://localhost:4000/api/songs");
-   
+
     setSongs(res.data.data);
   };
- 
+
   useEffect(() => {
-    getSongs(); 
+    getSongs();
   }, []);
   const [play, setPlay] = useState("");
   const [view, setView] = useState("songs");
@@ -82,7 +82,10 @@ function DashboardAllSongs() {
                   <Card
                     onClick={() => {
                       setPlay(song);
-                      updateLastListenedSong(song.category,localStorage.getItem("userId"))
+                      updateLastListenedSong(
+                        song.category,
+                        localStorage.getItem("userId")
+                      );
                     }}
                     hoverable
                     style={{
@@ -103,9 +106,43 @@ function DashboardAllSongs() {
                 title={song.songName}
                 description={song.category}
               /> */}
-                    <p>song: {song.songName} </p>
-                    <p>category: {song.category} </p>
-                    <p>artist: {song.artistName} </p>
+                    <p
+                      style={{
+                        color: "rgba(14, 22, 176, 0.806)",
+                        fontFamily: "Open Sans",
+                        fontSize: "14px",
+                        fontWeight: "bold",
+                        textDecoration: "bold",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Song: {song.songName}{" "}
+                    </p>
+
+                    <p
+                      style={{
+                        color: "rgba(14, 22, 176, 0.806)",
+                        fontFamily: "Open Sans",
+                        fontSize: "14px",
+                        fontWeight: "bold",
+                        textDecoration: "bold",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Category: {song.category}{" "}
+                    </p>
+                    <p
+                      style={{
+                        color: "rgba(14, 22, 176, 0.806)",
+                        fontFamily: "Open Sans",
+                        fontSize: "14px",
+                        fontWeight: "bold",
+                        textDecoration: "bold",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Artist: {song.artistName}{" "}
+                    </p>
                   </Card>
                 </div>
               );
@@ -113,22 +150,25 @@ function DashboardAllSongs() {
           </div>
           {play !== "" && (
             <div className="musicplayerConatiner">
-            <div className="songsDeatiles">
-               
-               <div>
-                 <img style={{
-                   width:"80%"
-                 }} src={play.songImage} alt="ok" />
-               </div>
-               <div style={{
-                 flexBasis:"70%"
-               }}>
-                 <p>{play.songName}</p>
-                 <p> {play.artistName}</p>
-               </div>
-
-
-             </div>
+              <div className="songsDeatiles">
+                <div>
+                  <img
+                    style={{
+                      width: "80%",
+                    }}
+                    src={play.songImage}
+                    alt="ok"
+                  />
+                </div>
+                <div
+                  style={{
+                    flexBasis: "70%",
+                  }}
+                >
+                  <p>{play.songName}</p>
+                  <p> {play.artistName}</p>
+                </div>
+              </div>
               <AudioPlayer
                 autoPlay
                 src={play.song}
@@ -164,16 +204,5 @@ function DashboardAllSongs() {
     </>
   );
 }
-
-// export const SongContainer = ({ data }) => {
-//   return (
-//     <div className="w-full flex flex-wrap gap-3 items-center justify-evenly ">
-//       {data &&
-//         data.map((song, i) => (
-//           <SongCard key={song._id} data={song} index={i} type="song" />
-//         ))}
-//     </div>
-//   );
-// };
 
 export default DashboardAllSongs;
