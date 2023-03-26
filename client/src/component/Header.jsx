@@ -121,7 +121,7 @@ const Header = () => {
               showSearch
               onChange={(e)=>{
                 console.log("harish",e)
-                const song=songs.find(({_id})=>_id===e)
+                const song=songs.find(({songName})=>songName===e)
                 navigate("/Dashboard/allsongs",{state:{
                   song
                 }});
@@ -131,7 +131,7 @@ const Header = () => {
               //     label: "Jack",
               //   },
               options={songs.map((song)=>({
-                  value: song._id,
+                  value: song.songName,
                   label: song.songName,
                 }))}
             />

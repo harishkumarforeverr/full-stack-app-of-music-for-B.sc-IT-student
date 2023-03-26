@@ -79,15 +79,22 @@
   /* justify-content: center; */
   padding-left: 2%;
   align-items: center;
-  display: flex
+  display: flex;
+  
 }
 .songsDeatiles span {
   color: #099268;
   font-size: 1.3rem;
 }
 
+.songsDeatiles img {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
+}
+
 .songsDeatiles p {
   color: #038aa1;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   font-size: 1.1rem;
 }

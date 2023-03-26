@@ -60,7 +60,7 @@ function DashboardAllSongs() {
   const location=useLocation();
   useEffect(()=>{
     
-  if(location.state.song){
+  if(location&&location?.state&&location?.state?.song){
     console.log("sssssssssss",location)
     setPlay(location.state.song);
     updateLastListenedSong(
