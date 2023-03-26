@@ -15,6 +15,8 @@ import SignupPage from "./component/Auth/Signup/SignupPage";
 import RecommendationCard from "./component/Cards/RecommendationCard";
 import PublicRoute from "./routes/PublicRoute";
 import PrivateRoute from "./routes/PrivateRoute";
+import HomeCards from "./component/Home/HomeCards";
+import ResetPassword from "./component/Auth/ResetPassword/ResetPassword";
 
 function App() {
   // const firebaseAuth = getAuth(app);
@@ -68,6 +70,7 @@ function App() {
           path={"/login"}
           element={<PublicRoute component={LoginPage} />}
         />
+        {/* Home */}
         <Route
           path={"/signup"}
           element={<PublicRoute component={SignupPage} />}
@@ -77,9 +80,18 @@ function App() {
           element={<PrivateRoute visibleSide component={RecommendationCard} />}
         />
         <Route
+          path={"/home"}
+          element={<PrivateRoute visibleSide component={HomeCards} />}
+        />
+        <Route
           path={"/DashboardArtists"}
           element={<PrivateRoute visibleSide component={DashboardArtists} />}
         />
+        <Route
+          path={"/ResetPassword"}
+          element={<PublicRoute component={ResetPassword} />}
+        />
+        {/*  */}
       {/* DashboardArtists */}
 
         <Route

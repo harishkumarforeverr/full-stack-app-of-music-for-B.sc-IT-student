@@ -56,13 +56,7 @@ const DashBoardHome = () => {
       }}
       icon={<GiMusicalNotes className="text-3xl text-textColor" />} name={"Album"}  />
 
-      {/* <DashboardCard
-        onClick={() => {
-          navigator("/Dashboard/user");
-        }}
-        icon={<FaUsers className="text-3xl text-textColor" />}
-        name={"Users"}
-      />  */}
+    
     </div>
   );
 };

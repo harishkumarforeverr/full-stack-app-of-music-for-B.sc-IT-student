@@ -124,12 +124,23 @@ const LoginPage = () => {
                       <Form.Item name="remember" valuePropName="checked">
                         <Checkbox>Remember Me</Checkbox>
                       </Form.Item>
-                      <span
+                     <div style={{
+                      display:"flex",
+                      flexDirection:"column"
+                     }}>
+                     <span
                         className="check_forgot"
                         onClick={() => navigate("/signup")}
                       >
-                        signup ?
+                        signup
                       </span>
+                      <span
+                        className="resetPassword"
+                        onClick={() => navigate("/ResetPassword")}
+                      >
+                        reset Password
+                      </span>
+                     </div>
                     </div>
                     <Form.Item>
                       <CustomButton type="primary" htmlType="submit">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { logo } from "../img";
 import { useStateValue } from "../Context/StateProvider";
@@ -9,8 +9,11 @@ import { motion } from "framer-motion";
 import { FaSearch } from "react-icons/fa";
 
 import { FaCrown } from "react-icons/fa";
-import { Button, Input, Popover } from "antd";
-import "./Header.css"; 
+import { Button, Input, Popover, Select } from "antd";
+import "./Header.css";
+import axios from "axios";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -44,8 +47,17 @@ const Header = () => {
         Logout
       </p>
     </div>
-  );
+  ); 
+  const [songs, setSongs] = useState([]);
+  const getSongs = async () => {
+    const res = await axios.get("http://localhost:4000/api/songs");
+   console.log("res.data.data",res.data.data)
+    setSongs(res.data.data);
+  };
 
+  useEffect(() => {
+    getSongs();
+  }, []);
   return (
     <header className="flex items-center w-full p-4 md:py-2 md:px-6">
       <NavLink to={"/"}>
@@ -97,12 +109,33 @@ const Header = () => {
       <div className="search1">
         <form>
           <div className="search-box">
-            <input
+            {/* <input
               type="search"
               placeholder="Search here..."
               className="search-input"
+            /> */}
+            {/* /Dashboard/allsongs */}
+            <Select
+              placeholder="Search here..."
+              className="search-input"
+              showSearch
+              onChange={(e)=>{
+                console.log("harish",e)
+                const song=songs.find(({_id})=>_id===e)
+                navigate("/Dashboard/allsongs",{state:{
+                  song
+                }});
+              }}
+              // {
+              //     value: "jack",
+              //     label: "Jack",
+              //   },
+              options={songs.map((song)=>({
+                  value: song._id,
+                  label: song.songName,
+                }))}
             />
-            {/* <FontAwesomeIcon icon={faSearch} className="search-icon" /> */}
+            {/* <FontAwesomeIcon className="search-icon" /> */}
           </div>
         </form>
       </div>

@@ -1,5 +1,10 @@
 @import "../../../Scss/base/_colors.scss";
-
+.resetPassword{
+  color: blue;
+  white-space: nowrap;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .Login-page-container {
   background-color: var(--white);
   height: 95.5vh;

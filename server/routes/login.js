@@ -18,55 +18,55 @@ router.post(
   ],
   async (req, res) => {
     // try {
-      const { email, password } = req.body;
-      const findUserIfExist = await User.findOne({ email,password });
-      console.log(findUserIfExist)
-      if (findUserIfExist) {
-        const userInfo = await UserInfoSchema.find({
-          userId: findUserIfExist._id,
+    const { email, password } = req.body;
+    const findUserIfExist = await User.findOne({ email, password });
+    console.log(findUserIfExist);
+    if (findUserIfExist) {
+      const userInfo = await UserInfoSchema.find({
+        userId: findUserIfExist._id,
+      });
+      console.log("userInfouserInfo", userInfo);
+      if (userInfo.length > 0) {
+        return res.status(200).json({
+          status: 200,
+          message: "Login Successfully",
+          data: findUserIfExist,
         });
-        console.log("userInfouserInfo", userInfo);
-        if (userInfo.length > 0) {
-          return res.status(200).json({
-            status: 200,
-            message: "Login Successfully",
-            data: findUserIfExist,
-          });
-        } else {
-          const artistName = await Songs.aggregate([
-            { $group: { _id: "$artistName", items: { $push: "$$ROOT" } } },
-            { $project: { items: { $slice: ["$items", 1] } } },
-            { $unwind: "$items" },
-          ]); 
-          const category = await SongsCategory.find({});
-          const updateData = {
-            language: [
-              {
-                label: "Hindi",
-                url: "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
-              },
-              {
-                label: "Other",
-                url: "https://images.unsplash.com/photo-1566842937027-437d91739e89?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxMHx8c29uZ3N8ZW58MHx8fHwxNjc2MzgzMzE1&ixlib=rb-4.0.3&q=80",
-              },
-            ],
-            artist: artistName,
-            category,
-            type: "new User",
-            userId: findUserIfExist._id,
-          };
-          return res.status(200).json({
-            status: 200,
-            message: "Login Successfully",
-            data: updateData,
-          });
-        }
       } else {
-        return res.status(404).json({
-          status: 404,
-          message: "user not found.",
+        const artistName = await Songs.aggregate([
+          { $group: { _id: "$artistName", items: { $push: "$$ROOT" } } },
+          { $project: { items: { $slice: ["$items", 1] } } },
+          { $unwind: "$items" },
+        ]);
+        const category = await SongsCategory.find({});
+        const updateData = {
+          language: [
+            {
+              label: "Hindi",
+              url: "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+            },
+            {
+              label: "Other",
+              url: "https://images.unsplash.com/photo-1566842937027-437d91739e89?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxMHx8c29uZ3N8ZW58MHx8fHwxNjc2MzgzMzE1&ixlib=rb-4.0.3&q=80",
+            },
+          ],
+          artist: artistName,
+          category,
+          type: "new User",
+          userId: findUserIfExist._id,
+        };
+        return res.status(200).json({
+          status: 200,
+          message: "Login Successfully",
+          data: updateData,
         });
       }
+    } else {
+      return res.status(404).json({
+        status: 404,
+        message: "user not found.",
+      });
+    }
     // } catch (e) {
     //   res.status(404).send({
     //     message: "something went wrong try again",
@@ -98,7 +98,7 @@ router.post(
   async (req, res) => {
     const { email, password, username, phone } = req.body;
     // try {
-    const findUserIfExist = await User.findOne({ email }); 
+    const findUserIfExist = await User.findOne({ email });
     if (findUserIfExist) {
       return res.status(400).json({
         status: 400,
@@ -132,7 +132,17 @@ router.post(
     // }
   }
 );
-router.put(
+router.get("/", async (req, res) => {
+  const findUserIfExist = await User.find({});
+  console.log("findUserIfExist", findUserIfExist);
+  return res.status(200).json({
+    status: 200,
+    message: "user already exist",
+    data: findUserIfExist,
+  });
+});
+
+router.post(
   "/reset",
   [
     body("email").isEmail().withMessage("Email must be valid"),
@@ -144,41 +154,34 @@ router.put(
   ],
   async (req, res) => {
     // try {
-      const { email, password } = req.body;
-      const findUserIfExist = await User.findOne({ email });
-      console.log(findUserIfExist)
-      if (findUserIfExist) {
-       const updatedData= await User.findOneAndUpdate({ email },{email,password},{
-        new: true
+    const { email, password } = req.body;
+    const findUserIfExist = await User.findOne({ email });
+    console.log(findUserIfExist);
+    if (findUserIfExist) {
+      const data = await User.findOneAndUpdate(
+        { email },
+        {
+          password,
+        },
+        { new: true }
+      );
+      return res.status(200).json({
+        status: 200,
+        data,
+        message: "successfully updated",
       });
-       return res.status(200).json({
+    } else {
+      return res.status(404).json({
         status: 404,
-        message: "user email updated",
-        data: updatedData,
+        message: "user not found.",
       });
-      } else {
-        return res.status(200).json({
-          status: 404,
-          message: "no user found",
-          data: findUserIfExist,
-        });
-      }
+    }
     // } catch (e) {
     //   res.status(404).send({
     //     message: "something went wrong try again",
     //     error: e,
     //   });
     // }
-  }
-);
-router.get("/", async (req, res) => {
-    const findUserIfExist = await User.find({});
-    console.log("findUserIfExist", findUserIfExist);
-    return res.status(200).json({
-      status: 200,
-      message: "user already exist",
-      data: findUserIfExist,
-    });
   }
 );
 

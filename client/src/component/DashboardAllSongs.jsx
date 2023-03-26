@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, Card } from "antd";
 import AudioPlayer from "react-h5-audio-player";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { DownloadOutlined } from "@ant-design/icons";
 import "react-h5-audio-player/lib/styles.css";
 import DashboardNewSongs from "./DashboardNewSongs";
@@ -57,6 +57,19 @@ function DashboardAllSongs() {
       setPlay(newObj);
     }
   };
+  const location=useLocation();
+  useEffect(()=>{
+    
+  if(location.state.song){
+    console.log("sssssssssss",location)
+    setPlay(location.state.song);
+    updateLastListenedSong(
+      location.state.song.category,
+      localStorage.getItem("userId")
+    );
+  }
+
+  },[location])
   return (
     <>
       {view == "songs" && (

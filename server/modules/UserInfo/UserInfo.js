@@ -16,27 +16,6 @@ let UserInfoSchema = Schema(
     lastMusicCatId: {
       type: String 
     }, 
-    // lastplayedMusicsIds:{
-    //   id:{
-    //     type: Schema.Types.ObjectId,
-    //     require: true,
-    //   },
-    //   createdAt:{
-    //     default:Date.now()
-    //   }
-    // }
-    lastplayedMusicsIds: [
-      {
-        type: new mongoose.Schema(
-          {
-            userId:  Schema.Types.ObjectId,
-            songId:  Schema.Types.ObjectId
-          },
-          { timestamps: true }
-        )
-      }
-    ]
-  
   },
   { versionKey: false, timestamps: true, collection: "UserInfo" }
 );

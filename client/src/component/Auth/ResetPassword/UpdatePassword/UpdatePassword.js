@@ -1,12 +1,11 @@
 import React from "react";
-import { Form, Input, Row, Col, Divider, message } from "antd";
-import Header from "../../../Header/Header";
+import { Form, Input, Row, Col, Divider, message } from "antd"; 
 import "./UpdatePassword.scss";
 import { AssetsImage } from "../../../../constants/AssetsConstant";
 import { useNavigate, useLocation } from "react-router-dom";
-import { CustomImage, CustomButton } from "../../../../components";
-import { common } from "../../../../services/Common";
+import { CustomImage, CustomButton } from "../../../../components"; 
 import { useSelector } from "react-redux";
+import HeaderPage from "../../../../Header/Header";
 
 const { Password } = Input;
 
@@ -48,24 +47,12 @@ const UpdatePassword = () => {
   };
 
   const handleOnFinish = async (value) => {
-    const data = {
-      email,
-      OTP,
-      password: value.password,
-      tenantId ,
-    };
-    const res = await common.resetpassword(data);
-    if (res.status === 200) {
-      message.success("Reset of your password is sucessfully done");
-      navigate("/login");
-    } else {
-      message.error("Reset of the password is failed");
-    }
+   
   };
   return (
     <>
       <div className="UpdatePassword-container">
-        <Header />
+      <HeaderPage />
         <div className="UpdatePassword_content">
           <Row>
             <Col span={12}>
