@@ -1,0 +1,1220 @@
+[{
+  "_id": {
+    "$oid": "63e689fe975b94b786e818cd"
+  },
+  "created_at": {
+    "$date": "2023-02-10T18:16:30.742Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=93c2eacc-38c6-4025-a8a3-6e2f909382e5",
+  "songName": "Aaj Phir tum pe pyar aaya hai",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Faaj%20fir%20tumpe.jpeg?alt=media&token=9f9c1934-1d6a-4e3e-a17c-1c064a47f8ca",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FAaj%20Phir%20tum%20pe%20pyar%20aaya%20hai(KoshalWorld.Com).mp3?alt=media&token=1f9d3613-76f6-43a9-8ff7-092229e78476",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-10T18:16:30.777Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-10T18:16:30.777Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e68caa975b94b786e818d0"
+  },
+  "created_at": {
+    "$date": "2023-02-10T18:27:54.189Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=b6402aa6-8924-43ef-bfde-76c3bb456435",
+  "songName": "Baaton Ko Teri hum bhula na sake",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fbaaton%20ko%20teri%20hm%20bhula%20n%20ske.jpeg?alt=media&token=6374cf3a-bfc5-4bf4-aec2-29a7b6c8f0d4",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FBaaton%20Ko%20Teri%20hum%20bhula%20na%20sake(KoshalWorld.Com).mp3?alt=media&token=b437e7d7-42db-4c90-9cc3-0104bc28b3d0",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-10T18:27:54.196Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-10T18:27:54.196Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e703485b23095a7bf95980"
+  },
+  "created_at": {
+    "$date": "2023-02-11T02:54:00.648Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=19b0ac96-f0f2-429f-af65-acd085417541",
+  "songName": "First kiss",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FFirst%20%20Kiss.jpeg?alt=media&token=aeafa39d-f549-4792-9227-c5dc8f7e443e",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2F128-First%20Kiss%20-%20Yo%20Yo%20Honey%20Singh%20128%20Kbps.mp3?alt=media&token=4c550bfe-3e4c-4f0d-a2a6-1a880a681927",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T02:54:00.683Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T02:54:00.683Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e703975b23095a7bf95983"
+  },
+  "created_at": {
+    "$date": "2023-02-11T02:55:19.935Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=db169542-16d4-493f-afc2-12398e98d254",
+  "songName": "Paris ka trip",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FParis%20ka%20trip.jpeg?alt=media&token=c16a99db-fb6e-4744-986c-bda82df507fa",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2F128-Paris%20Ka%20Trip%20-%20Yo%20Yo%20Honey%20Singh%20128%20Kbps.mp3?alt=media&token=a7e639df-bbbc-4e19-ba68-9cfe584b5d4c",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T02:55:19.938Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T02:55:19.938Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e703d85b23095a7bf95986"
+  },
+  "created_at": {
+    "$date": "2023-02-11T02:56:24.613Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FSaiyaan%20ji.jpeg?alt=media&token=bc6369f0-d9f7-4e1f-b0a7-a3c9a09eb598",
+  "songName": "Saiyaan ji",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=e3d0d349-d9fb-4c95-a77d-bfa9dcb60b68",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2F128-Saiyaan%20Ji%20-%20Yo%20Yo%20Honey%20Singh%20128%20Kbps.mp3?alt=media&token=895164a7-7224-426b-9066-cf52cfeccb25",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T02:56:24.616Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T02:56:24.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e704335b23095a7bf95989"
+  },
+  "created_at": {
+    "$date": "2023-02-11T02:57:55.442Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=12f350be-da44-4ebd-b363-eb4803081739",
+  "songName": "Brown Rang",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FBrown%20Rang.jpeg?alt=media&token=478ff63b-2dc6-4694-b699-115d372d5b89",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FBROWN%20RANG%20OFFICIAL%20VIDEO%20%20YO%20YO%20HONEY%20SINGH%20%20INTERNATIONAL%20VILLAGER.mp3?alt=media&token=3136664a-407b-4f58-a8cf-3a013141914d",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T02:57:55.444Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T02:57:55.444Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e7046c5b23095a7bf9598c"
+  },
+  "created_at": {
+    "$date": "2023-02-11T02:58:52.149Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=d31c9275-5d8d-4f28-9dc7-8fa58c6a2b0c",
+  "songName": "Chaar bottle vodka",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FChaar%20bottle%20vodka.jpeg?alt=media&token=3ca48120-ad17-4199-9314-5cc1a93658a4",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FChaar%20Bottle%20Vodka%20Remix%20Slap%20House%20BASS%20BOOSTED(KoshalWorld.Com).mp3?alt=media&token=cb11931d-e8b6-4286-b1f5-998ab1bf6b42",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T02:58:52.151Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T02:58:52.151Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e704a05b23095a7bf9598f"
+  },
+  "created_at": {
+    "$date": "2023-02-11T02:59:44.845Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=01cdc148-9cd0-46bb-b0f6-b26102d9a308",
+  "songName": "Desi kalakar",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDesi%20kalakar.jpeg?alt=media&token=09ff7d83-7144-40f0-89f0-7d7e55440f76",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FDesi%20Kalakar%20(%20Honey%20Singh)%20Remix%20By%20Dj%20SaGaR%20PrOcHe(KoshalWorld.Com).mp3?alt=media&token=9693b2bc-d257-4ab0-a923-988e225b8780",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T02:59:44.848Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T02:59:44.848Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e704e15b23095a7bf95992"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:00:49.806Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=5c5e9e5a-f69f-43cb-b4d1-26c0cf1e3d5a",
+  "songName": "Love dose",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FLove%20Dose.jpeg?alt=media&token=21a971dd-e12f-480e-b4be-08b55740f7e1",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FExclusive%20LOVE%20DOSE%20Full%20Video%20Song%20%20Yo%20Yo%20Honey%20Singh%20Urvashi%20Rautela%20%20Desi%20Kalakaar.mp3?alt=media&token=842c00b7-32ce-4711-970e-8e591fbf9e7c",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:00:49.808Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:00:49.808Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e7052f5b23095a7bf95995"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:02:07.135Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=8051b0ed-6252-449d-bbf9-ce94a84a7bdb",
+  "songName": "Issey Kehate hai hip hop",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FIssey%20kahte%20hai%20hip%20hop.jpeg?alt=media&token=8ad68476-5a12-4d90-a1c3-fb94fd5bdcf2",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FOfficial%20Issey%20Kehte%20Hain%20Hip%20Hop%20Full%20Video%20Song%20%20Yo%20Yo%20Honey%20Singh%20%20World%20Music%20Day.mp3?alt=media&token=5ba69345-95da-4a2b-9547-60cbbc598aba",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:02:07.139Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:02:07.139Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e7055e5b23095a7bf95998"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:02:54.799Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=846828c3-026c-4610-ae9f-f2a98e8f2573",
+  "songName": "Yai Re",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FYai%20Re.jpeg?alt=media&token=159ac4b5-a54d-406d-a3a7-cf4cbbf33165",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FYai%20Re(Hoeny%20singh).mp3?alt=media&token=bb3756f7-dcef-421b-8954-ad86578ece3f",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:02:54.801Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:02:54.801Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e705a95b23095a7bf9599b"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:04:09.713Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=b4676637-3424-46f8-9181-35925145b8cc",
+  "songName": "Blue eyes",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FBlue%20Eyes.jpeg?alt=media&token=2e9ca198-419a-4cf0-aaf8-a65dc8c9d961",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FBlue_Eyes_-_Yo_Yo_Honey_Singh%20-%20(DjWorldKing.in).mp3?alt=media&token=d929dd7b-652d-444c-884c-27da2ba4b2b4",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:04:09.716Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:04:09.716Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e705db5b23095a7bf9599e"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:04:59.115Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=99910f37-eacb-4bb6-b4f6-644fcc347d55",
+  "songName": "Call aundi",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FCall%20aundi.jpeg?alt=media&token=c5e54fe8-b9ac-495a-95ab-fa0b79ed8ac0",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FCall%20Aundi%20Video%20Song%20%20ZORAWAR%20%20Yo%20Yo%20Honey%20Singh%20%20TSeries.mp3?alt=media&token=399ae007-2a20-47ce-ab0d-4151ab5dde06",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:04:59.117Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:04:59.117Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e7060d5b23095a7bf959a1"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:05:49.187Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=e190474e-73c4-46b3-b914-d37a77573034",
+  "songName": "Dheere Dheere",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDheere%20dheere.jpeg?alt=media&token=287aae5d-86c5-4d09-b1a7-14f80f8a61cb",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FDheere%20Dheere%20Se%20Meri%20Zindagi%20Video%20Song%20OFFICIAL%20Hrithik%20Roshan%20Sonam%20Kapoor%20%20Yo%20Yo%20Honey%20Singh.mp3?alt=media&token=5df607f0-8135-4bba-bf4d-98ce58c6e057",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:05:49.189Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:05:49.189Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e706495b23095a7bf959a4"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:06:49.927Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=00a5b8cc-4d4a-443c-a328-e595fda10a3f",
+  "songName": "Haye mera dil",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHaye%20mera%20dil.jpeg?alt=media&token=c1f27465-9347-4cce-a39c-af84fcca3275",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FRoRo%20Ke%20Arja%20Gujarda%20Hai%20Dil%20Feat%20Honey%20Singh.mp3?alt=media&token=dd2da464-8fe0-42af-954e-9cedea65ca65",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:06:49.929Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:06:49.929Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e706af5b23095a7bf959a7"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:08:31.407Z"
+  },
+  "artistName": "Jubin Nautiyal",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJubin%20Nautiyal.jpeg?alt=media&token=5e35b3b5-a4dc-4b5e-83a7-0e7798506c30",
+  "songName": "Ankh lad jaave",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FAnkh%20lad%20jaaye.jpeg?alt=media&token=f6e1216c-40f3-454a-8e37-bea65252eedc",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Akh%20Lad%20Jaave%20Song%20%20TSeries%20Acoustics%20%20JUBIN%20NAUTIYAL%20%20Loveyatri.mp3?alt=media&token=9fbe759e-7138-4931-b5d6-3c82711e2a89",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:08:31.408Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:08:31.408Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e707005b23095a7bf959aa"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:09:52.763Z"
+  },
+  "artistName": "Jubin Nautiyal",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJubin%20Nautiyal.jpeg?alt=media&token=ddb0a2d6-855c-465a-930a-715472b395cd",
+  "songName": "Bezubaan kab se",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FBejuban%20kabse.jpeg?alt=media&token=5fe2d21f-79bf-4879-88c0-73cde81a6944",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Full%20Song%20%20Bezubaan%20Kab%20Se%20%20Street%20Dancer%203D%20%20Varun%20D%20%20Siddharth%20B%20Jubin%20NSachinJigar.mp3?alt=media&token=8e988448-3f60-499f-a475-43d75f921257",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:09:52.764Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:09:52.764Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e707355b23095a7bf959ad"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:10:45.256Z"
+  },
+  "artistName": "Jubin Nautiyal",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJubin%20Nautiyal.jpeg?alt=media&token=9fab74ee-6725-4e7b-a488-5e612b6407b6",
+  "songName": "Humma  Humma",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FThe%20humma.jpeg?alt=media&token=76f58a31-ccf9-48b7-9ffe-ae4671ce2115",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20The%20Humma%20Song%20%20OK%20Jaanu%20%20Shraddha%20Kapoor%20%20Aditya%20Roy%20Kapur%20ARRahman%20%20Badshah%20Tanishk%20%204K.mp3?alt=media&token=21a5a900-dc1c-46d7-b757-3e8114f5c8ef",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:10:45.258Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:10:45.258Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e707685b23095a7bf959b0"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:11:36.687Z"
+  },
+  "artistName": "Jubin Nautiyal",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJubin%20Nautiyal.jpeg?alt=media&token=2dd7c8b0-bfb0-4374-b3ea-a60460389623",
+  "songName": "Mast nazro se",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FMast%20Nazron%20se.jpeg?alt=media&token=18e1c8b2-404e-4e99-b109-c45bdf29ca47",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Video%20Mast%20Nazron%20Se%20%20Rochak%20K%20ft%20Jubin%20Nautiyal%20Nikita%20Dutta%20%20Manoj%20M%20%20Ashish%20P%20%20Bhushan%20K.mp3?alt=media&token=592a8a51-d988-427a-a817-0509bb6f68a4",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:11:36.689Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:11:36.689Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e707aa5b23095a7bf959b3"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:12:42.925Z"
+  },
+  "artistName": "Jubin Nautiyal",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJubin%20Nautiyal.jpeg?alt=media&token=1c817fbf-7ff2-473d-b522-64134e99c1c1",
+  "songName": "Khusi jab bhi teri",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fkhusi%20jab%20bhi%20teri.jpeg?alt=media&token=2c60bbb8-1bca-441e-a269-0c5e679fec7b",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Khushi%20Jab%20Bhi%20Teri%20Lyrical%20Jubin%20Nautiyal%20Khushalii%20Kumar%20%20Rochak%20KohliA%20M%20Turaz%20%20Bhushan%20K.mp3?alt=media&token=aaf0aa17-7a94-4f4e-b20e-74cea032abe9",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:12:42.927Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:12:42.927Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e708185b23095a7bf959b6"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:14:32.322Z"
+  },
+  "artistName": "Jubin Nautiyal",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJubin%20Nautiyal.jpeg?alt=media&token=3d166d1c-4465-4a28-b840-a035f02a4ef9",
+  "songName": "Meri Aashiqui",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FMeri%20ashiqui.jpeg?alt=media&token=f8b2a4b5-f331-4f81-9c1b-840e48410991",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Meri%20Aashiqui%20Song%20%20Rochak%20Kohli%20Feat%20Jubin%20Nautiyal%20%20Ihana%20D%20%20Shree%20Anwar%20Sagar%20%20Bhushan%20Kumar.mp3?alt=media&token=3d6fc3cf-44d6-488a-9302-d0e7fe24a855",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:14:32.324Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:14:32.324Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e70b835b23095a7bf959c2"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:29:07.582Z"
+  },
+  "artistName": "Emiway Bantai",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FEmiway%20Bantai.jpeg?alt=media&token=0838bbb2-5e82-4c89-9d7a-7c34dee3ba11",
+  "songName": "Firse machayenge",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FFirse%20machayenge.jpeg?alt=media&token=06626859-aa4d-4d60-b8b4-5b902371f934",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20EMIWAY%20%20FIRSE%20MACHAYENGE%20OFFICIAL%20MUSIC%20VIDEO.mp3?alt=media&token=8ed2656c-e751-4889-abc5-0f230e2dde4a",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:29:07.584Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:29:07.584Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e70be95b23095a7bf959c5"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:30:49.691Z"
+  },
+  "artistName": "Emiway Bantai",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDivine.jpeg?alt=media&token=b8259b75-2494-4887-a426-3e119a9e8a2f",
+  "songName": "Apna time ayega",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FApna%20time%20ayega.jpeg?alt=media&token=c7979a7d-d254-4abf-8e44-cfcf1230ab54",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Apna%20Time%20Aayega%20%20FULL%20SONGS%20%20Gully%20Boy%20%20Ranveer%20Singh%20%20Alia%20Bhatt.mp3?alt=media&token=99f2b1e7-8b75-4e72-8574-29f801fec739",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:30:49.693Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:30:49.693Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e70c345b23095a7bf959c8"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:32:04.049Z"
+  },
+  "artistName": "Divine",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDivine.jpeg?alt=media&token=4d8d2f73-e422-4622-8cf8-8ee1ac3fa023",
+  "songName": "Baazigar Feat",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FBaazigar.jpeg?alt=media&token=c470b8f8-714e-4581-87f9-a563f56c72a1",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20DIVINE%20%20Baazigar%20feat%20Armani%20White%20%20Prod%20by%20Karan%20Kanchan%20%20Official%20Audio.mp3?alt=media&token=fbce6af0-84b9-434c-9f96-4aa3f1cbc74a",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:32:04.051Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:32:04.051Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e70c7a5b23095a7bf959cb"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:33:14.172Z"
+  },
+  "artistName": "Divine",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDivine.jpeg?alt=media&token=7458e520-25f5-4f9e-bec6-5f509edf9718",
+  "songName": "Mirchi Feat",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fdivine%20mirchi.jpeg?alt=media&token=2cf23d88-eed4-4a5c-9bee-e99eb45438e9",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20DIVINE%20%20MIRCHI%20Feat%20Stylo%20G%20MC%20Altaf%20%20Phenom%20%20Official%20Music%20Video.mp3?alt=media&token=58287eb0-c421-4a5c-b4f8-f87bd67b7cd1",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:33:14.173Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:33:14.173Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e70cfc5b23095a7bf959ce"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:35:24.443Z"
+  },
+  "artistName": "Badshah",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FBadshah.jpeg?alt=media&token=c9e21148-c12d-4489-ab81-6d4957679d28",
+  "songName": "Bad boy X Bad girl",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FBad%20Boy%20X%20Bad%20Girl.jpeg?alt=media&token=07d3bc5b-7cd3-4c96-86ac-28472a687e17",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Badshah%20%20Bad%20Boy%20x%20Bad%20Girl%20Official%20Video%20%20Mrunal%20Thakur%20%20Nikhita%20Gandhi%20%20Trending%20Song%202021.mp3?alt=media&token=36395df4-e1b0-482b-886a-38b664ce4533",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:35:24.444Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:35:24.444Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e70d365b23095a7bf959d1"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:36:22.239Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoney%20singh.jpeg?alt=media&token=ef4ccd0a-b5bb-46b1-87bd-cc9b5430ddf4",
+  "songName": "Kanta laga",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fkanta%20laga.jpeg?alt=media&token=8d02edca-87b4-4f52-addb-95847da9a7f9",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20KANTA%20LAGA%20%20Tony%20Kakkar%20Yo%20Yo%20Honey%20Singh%20Neha%20Kakkar%20%20Anshul%20Garg%20%20Latest%20Hindi%20Song%202021.mp3?alt=media&token=0f6ec69b-85d3-44b6-b9ee-6aa8f9b2e82e",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:36:22.242Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:36:22.242Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e70d795b23095a7bf959d4"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:37:29.222Z"
+  },
+  "artistName": "Honey singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoney%20singh.jpeg?alt=media&token=f80988ce-91c2-47db-b1fa-28a4a3de5d29",
+  "songName": "Shor machega",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FShor%20machayenge.jpeg?alt=media&token=18be4440-4aa2-4bdf-970e-9a39ab34ed3b",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Shor%20Machega%20Full%20Video%20Yo%20Yo%20Honey%20Singh%20Hommie%20DilliwalaMumbai%20SagaEmraan%20HashmiJohn%20Abraham.mp3?alt=media&token=d2af33ad-7a8e-4b35-b7c5-510d6ae96b00",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:37:29.224Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:37:29.224Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e70e455b23095a7bf959d7"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:40:53.440Z"
+  },
+  "artistName": "Raftar X Brodha",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FNachne%20ka%20shaung.jpeg?alt=media&token=b7889a95-40f4-402d-a862-9be8be077614",
+  "songName": "Nachane ka shaunq",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FNachne%20ka%20shaung.jpeg?alt=media&token=c536e48d-f34a-42f0-b2a0-4078190e494b",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Raftaar%20x%20Brodha%20V%20%20Naachne%20Ka%20Shaunq.mp3?alt=media&token=7350d03e-95a8-4b67-9ef6-d436082d1d92",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:40:53.444Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:40:53.444Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e70eca5b23095a7bf959da"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:43:06.116Z"
+  },
+  "artistName": "Divine",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDivine.jpeg?alt=media&token=d98fbeda-584f-4bd5-be37-fafbeab4fcfb",
+  "songName": "Sher aaya sher",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fsher%20aaya%20sher.jpg?alt=media&token=32707e32-4222-4af9-bc47-d910b0747140",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Sher%20Aaya%20Sher%20%20Gully%20Boy%20%20Siddhant%20Chaturvedi%20%20Ranveer%20Singh%20%20Alia%20Bhatt%20%20DIVINE.mp3?alt=media&token=5971ddfe-6a96-4250-a430-14e4bca5fbd2",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-02-11T03:43:06.118Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:43:06.118Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e711cf5b23095a7bf959dd"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:55:59.620Z"
+  },
+  "artistName": "Badshah",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fbashah.jpeg?alt=media&token=236f908e-d787-48dd-9aaa-f7b051c7e4ce",
+  "songName": "Abhi toh party suru hue hai",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FAbhi%20to%20party%20suru%20hue%20hai.jpeg?alt=media&token=757028ed-9b4e-4d30-b48b-a7aff32603dd",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Abhi%20Toh%20Party%20Shuru%20Hui%20Hai%20Lyrics%20%20Badshah%20Aastha.mp3?alt=media&token=42e09e9e-d762-4fc9-a615-15564729ace1",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:55:59.642Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:55:59.642Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e712635b23095a7bf959e0"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:58:27.845Z"
+  },
+  "artistName": "Badshah",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fbashah.jpeg?alt=media&token=9192d69e-a0f0-488d-be50-017a5b1d64d2",
+  "songName": "Paani paani",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FPaani%20paani.jpeg?alt=media&token=9f7fa70e-30e2-4106-a498-e3dd9db8021e",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Badshah%20%20Paani%20Paani%20%20Jacqueline%20Fernandez%20%20Official%20Music%20Video%20%20Aastha%20Gill%20%20Trending%20Songs.mp3?alt=media&token=23490c72-265a-4dd9-a152-3b1e5b18f1f5",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:58:27.846Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:58:27.846Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e712b95b23095a7bf959e3"
+  },
+  "created_at": {
+    "$date": "2023-02-11T03:59:53.626Z"
+  },
+  "artistName": "Badshah",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fbashah.jpeg?alt=media&token=9c4e52a4-a9f9-4a75-be50-0afe9647df4f",
+  "songName": "Jugnu",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJugnu.jpeg?alt=media&token=ba8f4332-dd37-45e1-b239-9173c69ab1c4",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Jugnu%20%20Badshah%20ft%20Nikita%20Gandhi%20%20LyricsStore%2004%20%20LS04.mp3?alt=media&token=92320a3f-8385-4935-afcc-0665cf478ef7",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T03:59:53.628Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T03:59:53.628Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e7132c5b23095a7bf959e6"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:01:48.570Z"
+  },
+  "artistName": "Tony Kakkar",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FTony%20kakkar.jpeg?alt=media&token=8213fcd0-8b54-4769-89a7-3adb0661e796",
+  "songName": "Goa Beach",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FGoa%20Beach.jpeg?alt=media&token=d49e1a74-92c4-4282-b56d-b4f384d2558c",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20GOA%20BEACH%20%20Tony%20Kakkar%20%20Neha%20Kakkar%20%20Aditya%20Narayan%20%20Kat%20%20Anshul%20Garg%20%20Latest%20Hindi%20Song%202020.mp3?alt=media&token=c5dc82db-7ecc-45bf-96e2-0133d682c716",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:01:48.572Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:01:48.572Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e714805b23095a7bf959e9"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:07:28.004Z"
+  },
+  "artistName": "Vishal Dadlani",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fvishal%20dadlani.jpeg?alt=media&token=53888207-2cfd-4b17-bec2-075157f3fc41",
+  "songName": "Baby ko bass pasand hai",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fbaby%20ko%20bass%20pasand%20hai.jpeg?alt=media&token=ed292afa-690d-47e6-83c8-02e35a5f4a5b",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Baby%20Ko%20Bass%20Pasand%20Hai%20Song%20%20SULTAN%20%20Salman%20Khan%20Anushka%20Sharma%20%20Vishal%20%20Shekhar%20%20Badshah.mp3?alt=media&token=737ffaa0-f5a3-4cd5-9bff-e4527c5e8f4f",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:07:28.006Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:07:28.006Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e714f45b23095a7bf959ec"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:09:24.035Z"
+  },
+  "artistName": "Benny Dayal",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FBenny%20dayal.jpeg?alt=media&token=efdf5cf1-d3b1-42f6-b652-c439a7f5fd8f",
+  "songName": "Badtameez dil",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fbadtameez%20dil.jpeg?alt=media&token=079533fa-12b1-438d-9843-52022466c487",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Badtameez%20Dil%20Yeh%20Jawaani%20Hai%20Deewani%20Full%20Song%20Feat%20Ranbir%20Kapoor%20Deepika%20Padukone%20%20PRITAM.mp3?alt=media&token=4d20597f-8a13-43ae-8e79-b1b533ea4239",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:09:24.036Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:09:24.036Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71a2d3dfd430ff7d70eee"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:31:41.415Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=3f8597da-893b-4798-bc33-4af393903ac8",
+  "songName": "Enna Sona",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FEnna%20sona.jpeg?alt=media&token=801687b5-3fcc-4695-bd4f-017e912533a7",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FEnna%20Sona(KoshalWorld.Com).mp3?alt=media&token=7835c4d6-b0bd-4072-88e0-d07ec8737ebf",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:31:41.436Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:31:41.436Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71b453dfd430ff7d70ef1"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:36:21.726Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=5bbae2b2-95cb-4d2e-be5e-226c6557a6d3",
+  "songName": "Hamari Adhuri Kahani",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fhamari%20adhuri%20kahani.jpeg?alt=media&token=b4c2f723-3986-4c2d-b943-f5444f0cd105",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FHamari%20Adhuri%20Kahani(KoshalWorld.Com).mp3?alt=media&token=c12060b4-9e8a-4b1a-862b-a1750c4fa2b3",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:36:21.734Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:36:21.734Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71ba43dfd430ff7d70ef4"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:37:56.073Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=fad2c50e-3d88-4729-b07f-1547e9799875",
+  "songName": "Kesariya Tera Ishq Hai Piya",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FKesariya.jpeg?alt=media&token=c9df59f9-c9eb-448b-bf68-f5dc933fe57f",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FKesariya%20Tera%20Ishq%20Hai%20Piya(PagalWorld.com.se).mp3?alt=media&token=0ef6cc85-d6ac-4c85-a617-3ecbdef0538d",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:37:56.080Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:37:56.080Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71bf13dfd430ff7d70ef7"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:39:13.045Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=591033d4-18bd-4599-92a4-a74ca277ffa8",
+  "songName": "Khairiyat",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fkhairiyat.jpeg?alt=media&token=96788b02-a89b-4734-aa9b-123ec25a5f53",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FKHAIRIYAT%20(BONUS%20TRACK)(KoshalWorld.Com).mp3?alt=media&token=dc9afe7a-6e6e-48f5-be4f-002a9f8a8913",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:39:13.051Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:39:13.051Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71c5a3dfd430ff7d70efa"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:40:58.636Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=7cad1e61-8bfb-40ab-ad5d-d63f0e8c3b59",
+  "songName": "Muskurane ki wajah tum ho",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FMuskuraane%20ki%20vajah%20tum%20ho.jpeg?alt=media&token=efc77845-3885-43b4-b910-7ca662f40e42",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FMuskurane%20ki%20wajah%20tum%20ho(KoshalWorld.Com).mp3?alt=media&token=672179cc-d246-4423-93c3-0161ada264fd",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:40:58.641Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:40:58.641Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71c7d5b23095a7bf959f1"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:41:33.248Z"
+  },
+  "artistName": "Anand raaj Anand",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fdil%20de%20diya%20hai.jpeg?alt=media&token=97758991-3260-4db2-8124-74416927718e",
+  "songName": "Dil de diya hai",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDil%20de%20diya%20hai.jpeg?alt=media&token=35a76059-7d64-48c3-905f-2401a5314ab6",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Dil%20De%20Diya%20Hai%20Jaan%20Tumhe%20Denge%20Hd%20Video%20Song%20%20Masti%20%20Anand%20Raj%20Anand%20%20Amrita%20Rao%20Vevek%20Oberoi.mp3?alt=media&token=637efa1e-805e-4c5c-a2d7-a465ccb7ed44",
+  "category": "SadSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:41:33.269Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:41:33.269Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71c993dfd430ff7d70efd"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:42:01.506Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=b0111219-cdcd-4da2-96a7-0d9f7c1297ca",
+  "songName": "Phir mohabbat",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FPhir%20Mohabbat.jpeg?alt=media&token=5962320f-54fc-481c-bdb1-d803c91920c4",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FPhir%20mohabbat(KoshalWorld.Com).mp3?alt=media&token=ac2a7d8f-84af-41f2-b8e3-ef70af9fb011",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:42:01.513Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:42:01.513Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71cb05b23095a7bf959f4"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:42:24.730Z"
+  },
+  "artistName": "Arijit singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fdua%20kro.jpeg?alt=media&token=01df53a9-b5bc-4aa2-9bf2-e301f0faf92b",
+  "songName": "Dua karo",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDua%20karo.jpeg?alt=media&token=bf5178b8-f733-49d9-8c09-46a5503152db",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Full%20Video%20Dua%20Karo%20%20Street%20Dancer%203D%20%20Varun%20DShraddha%20K%20%20Arijit%20Singh%20Bohemia%20SachinJigar.mp3?alt=media&token=7b63a6d3-bcf7-4109-9bf3-1933370e4727",
+  "category": "SadSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:42:24.732Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:42:24.732Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71ce45b23095a7bf959f7"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:43:16.454Z"
+  },
+  "artistName": "Sonu nigam",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FSonu%20niagam.jpeg?alt=media&token=e5c9a45c-6518-47e6-91c6-7117a9e30ede",
+  "songName": "Do pal",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDo%20pal.jpeg?alt=media&token=376c1cd2-7fd3-4d35-806a-eef43bff381b",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Do%20Pal%20%20Sonu%20Nigam%20%20Lata%20Mangeshkar%20Song%20%20Slowed%20And%20Reverb%20Lofi%20Mix.mp3?alt=media&token=179d7fb7-8884-4f59-acc6-26d4c611dbeb",
+  "category": "SadSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:43:16.456Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:43:16.456Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71d043dfd430ff7d70f00"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:43:48.375Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=bfac00e9-1af5-417b-9e1f-362509e19e3c",
+  "songName": "Tumse Bhi Zyada",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FTumse%20bhi%20jyada.jpeg?alt=media&token=f16a5166-ef9c-463d-9629-5a93fc48f79b",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FTumse%20Bhi%20Zyada%20(Full%20Song)(KoshalWorld.Com).mp3?alt=media&token=caddd78f-4189-4354-bc0c-8e19b3c4aec9",
+  "category": "RomaticSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:43:48.380Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:43:48.380Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71d3d5b23095a7bf959fa"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:44:45.864Z"
+  },
+  "artistName": "sonu nigam",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FSonu%20niagam.jpeg?alt=media&token=dedf9623-4029-49da-af87-08e00dfa80aa",
+  "songName": "Abhi mujh mein kahi",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FAbhi%20mujhme%20kahi.jpeg?alt=media&token=21f6b983-85d1-4884-b196-153284fac34c",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20LYRICS%20ABHI%20MUJH%20MEIN%20KAHIN%20%20Sonu%20Nigam%20%20Full%20Song%20with%20Lyrics%20%20Ayush%20Aaryan.mp3?alt=media&token=a11e03db-a59d-473b-b2f7-5ca4ca359339",
+  "category": "SadSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:44:45.867Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:44:45.867Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71db33dfd430ff7d70f03"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:46:43.469Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=3ecc4f0b-ac24-48cf-90c8-cd6d349dd6f5",
+  "songName": "Dance ka bhoot",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDance%20ka%20bhoot.jpeg?alt=media&token=e853c1d2-6030-4a78-a0bd-3264343247db",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FDance%20Ka%20Bhoot%20%20Brahm%C4%81stra%20%20Ranbir%20Kapoor%20%20Alia%20Bhatt%20%20Pritam%20%20Arijit%20Singh%20%20Amitabh%20B.mp3?alt=media&token=45aadfb3-7978-4256-a434-a44fceb91ee4",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:46:43.476Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:46:43.476Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71dc55b23095a7bf959fd"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:47:01.491Z"
+  },
+  "artistName": "Mohit chauhan",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Ftujhe%20bhula%20diya.jpeg?alt=media&token=9312f450-66aa-4696-8729-f5c4392a3065",
+  "songName": "Tujhe bhula diya",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FTujhe%20bhula%20diya.jpeg?alt=media&token=8bee6a6a-f326-4c14-8a7d-c63e2c98ee20",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2Fy2mate.com%20-%20Lyrical%20Tujhe%20Bhula%20Diya%20%20Anjaana%20Anjaani%20%20Ranbir%20Kapoor%20Priyanka%20Chopra%20%20Vishal%20%20Shekhar.mp3?alt=media&token=473d54a1-8250-471a-bc76-c69aa92cbbd3",
+  "category": "SadSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:47:01.492Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:47:01.492Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71dfb3dfd430ff7d70f06"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:47:55.275Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=4d2ef5a4-3e25-4307-8b62-a0ddd10ecb36",
+  "songName": "Jagga jasoos",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJagga%20Jasoos.jpeg?alt=media&token=5103759b-0a34-40df-85e3-a38ae3bfbfc2",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FJagga%20Jasoos%20Galti%20Se%20Mistake%20Full%20Video%20Song%20%20Ranbir%20Katrina%20%20Pritam%20Arijit%20Amit%20%20Amitabh%20B.mp3?alt=media&token=07038716-e16b-4397-aa4a-90a362e38fba",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:47:55.282Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:47:55.282Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71e3f3dfd430ff7d70f09"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:49:03.987Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=97b500e3-a6d7-414c-9b1a-d7e6848cfeb9",
+  "songName": "Ghungaroo",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FGhungaroo.jpeg?alt=media&token=ecf7261b-8d5b-4e2b-9fa9-1cf2993c134a",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FLyrical%20%20Ghungroo%20Full%20Song%20%20WAR%20%20Hrithik%20Vaani%20Arijit%20Singh%20Shilpa%20%20Vishal%20%20Shekhar%20Kumaar.mp3?alt=media&token=193a3bc4-52d8-4916-89fd-ead291ae47ae",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:49:03.993Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:49:03.993Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71ea65b23095a7bf95a02"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:50:46.932Z"
+  },
+  "artistName": "Arijit singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=cbe9ce17-5860-44ca-b355-5f2030070b62",
+  "songName": "Main tera hero",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fpalat.jpeg?alt=media&token=7678ad61-584d-4e88-bfb6-44f7c256f6ae",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FMain%20Tera%20Hero%20Palat%20%20Tera%20Hero%20Idhar%20Hai%20Song%20Video%20%20Arijit%20Singh%20%20Varun%20Dhawan%20Nargis.mp3?alt=media&token=55cedadc-db5a-4858-8f72-8b942e0433e2",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:50:46.934Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:50:46.934Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71eb43dfd430ff7d70f0c"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:51:00.743Z"
+  },
+  "artistName": "Arijit Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=ac0a628d-359c-481e-8350-62d770558b8b",
+  "songName": "Sanivaar raati",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FSanivaar%20raati.jpeg?alt=media&token=59334e89-0774-4b4f-b290-b74a042e567a",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FMain%20Tera%20Hero%20%20Shanivaar%20Raati%20%20Full%20Video%20Song%20%20Arijit%20Singh%20%20Varun%20Dhawan.mp3?alt=media&token=d17c0975-daf2-4ebd-910a-cee5907aee13",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:51:00.747Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:51:00.747Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e71eda5b23095a7bf95a05"
+  },
+  "created_at": {
+    "$date": "2023-02-11T04:51:38.589Z"
+  },
+  "artistName": "Arijit singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=961fbaf0-c662-44a1-8199-56a336575fe4",
+  "songName": "Suraj dooba hai",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fsooraj%20dooba%20hai.jpeg?alt=media&token=e1488443-cd17-4548-882f-90e163840062",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FSooraj%20Dooba%20Hain%20FULL%20VIDEO%20SONG%20%20Arijit%20singh%20Aditi%20Singh%20Sharma%20%20TSERIES.mp3?alt=media&token=a743dc2e-b1a6-41df-9414-6594855e2e21",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-11T04:51:38.591Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T04:51:38.591Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f2e534b4e9be4ec56b5272"
+  },
+  "created_at": {
+    "$date": "2023-02-20T03:12:52.970Z"
+  },
+  "artistName": "Khesari Lal Yadav",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fdownload%20(1).jpg?alt=media&token=9915e2aa-1e92-4557-a30d-56108a496f6a",
+  "songName": "Muraiya Jaunpur Ke",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fdownload.jpg?alt=media&token=5374de72-c25b-414b-85f7-21f1177bee02",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2F%23Video%20%20%23Khesari%20Lal%20Yadav%20%20%23Kavita%20Yadav%20%20%E0%A4%AE%E0%A4%B0%E0%A4%88%E0%A4%AF%20%E0%A4%9C%E0%A4%A8%E0%A4%AA%E0%A4%B0%20%E0%A4%95%20%20Bhojpuri%20Holi%20Song%202023.mp3?alt=media&token=9c424d98-3fe6-42b7-a767-de0eb272df1e",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-02-20T03:12:53.048Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-20T03:12:53.048Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "642692daba5a843bff110d87"
+  },
+  "created_at": {
+    "$date": "2023-03-31T07:59:22.375Z"
+  },
+  "artistName": "Pawan Singh",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fpawan.jpeg?alt=media&token=e65ffbc3-e539-4ac3-a3f1-581b3b0366aa",
+  "songName": "Laal Ghaghra",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Flal%20ghaghra.jpg?alt=media&token=f58119c0-f903-40ce-bb2f-780bb174ed40",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FLaal%20Ghaghra%20-%20Pawan%20Singh.mp3?alt=media&token=e4499ec9-47a0-4294-8efe-81ee17451a26",
+  "category": "RockSong",
+  "createdAt": {
+    "$date": "2023-03-31T07:59:22.384Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-31T07:59:22.384Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6432d2aa66ecb9d9b80f4bcc"
+  },
+  "created_at": {
+    "$date": "2023-04-09T14:58:50.523Z"
+  },
+  "artistName": "Neha Kakkar",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2F2.jpg?alt=media&token=aa51e7ad-f92d-470e-ab15-f471947ff8c8",
+  "songName": "Dilbar",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2F1.jpg?alt=media&token=e9f61751-49e9-420d-8b4a-3f7e3a3d42b8",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FDilbar.mpeg?alt=media&token=f3caf299-a37e-4bd8-bd56-1d393a093eb8",
+  "category": "Party",
+  "createdAt": {
+    "$date": "2023-04-09T14:58:50.657Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-09T14:58:50.657Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6434dd1760d5fc4978c6bd41"
+  },
+  "created_at": {
+    "$date": "2023-04-11T04:07:51.797Z"
+  },
+  "artistName": "Neha Kakkar",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2F2.jpg?alt=media&token=7da85365-9aed-46e3-87d0-69d36750c02c",
+  "songName": "High Garmi",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FGarmi-From-Street-Dancer-3d.jpg?alt=media&token=60a9a81f-b62a-4ca1-a283-0415317110e8",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FX2Download.app%20-%20Full%20Song_%20Garmi%20_%20Street%20Dancer%203D%20_%20Varun%20D%2C%20Nora%20F%2C%20Badshah%2C%20Neha%20K%20_%20Remo%20D%20(128%20kbps).mp3?alt=media&token=c006e9d8-e282-4943-b4e7-43743c20377d",
+  "category": "Party",
+  "createdAt": {
+    "$date": "2023-04-11T04:07:51.814Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-11T04:07:51.814Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64363291c72de9562c1608c0"
+  },
+  "created_at": {
+    "$date": "2023-04-12T04:24:49.177Z"
+  },
+  "artistName": "Lata mangeshkar",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Flata%20mangeshkr.jpeg?alt=media&token=72dd9be9-a1a2-444a-890c-5865c1a6985d",
+  "songName": "lag ja gale se",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Flag%20ja%20gle%20se.jpeg?alt=media&token=79bc5b25-b386-468b-a4a8-f1efbcd2233c",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FX2Download.app%20-%20Lag%20Jaa%20Gale%20-%20Sadhana%2C%20Lata%20Mangeshkar%2C%20Woh%20Kaun%20Thi%20Romantic%20Song%20(128%20kbps).mp3?alt=media&token=ba96a70c-6da6-4ba4-9b13-02f8e742ccbc",
+  "category": "90's song",
+  "createdAt": {
+    "$date": "2023-04-12T04:24:49.193Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T04:24:49.193Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "643632e0c72de9562c1608c3"
+  },
+  "created_at": {
+    "$date": "2023-04-12T04:26:08.392Z"
+  },
+  "artistName": "Lata mangeshkar",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Flata%20mangeshkr.jpeg?alt=media&token=5e506922-c829-4fd0-86a7-0bce6d26a771",
+  "songName": "Kora karag",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fsong%20image.jpeg?alt=media&token=cb78c0cc-8ca2-481d-bd64-749c39bf7259",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FX2Download.app%20-%20Kora%20Kagaz%20Tha%20Yeh%20Man%20Mera%204K%20Video%20Song%20_%20Lata%20Mangeshkar_%20Kishore%20Kumar%20_%20Aradhana_%20Rajesh%20Khanna%20(128%20kbps).mp3?alt=media&token=309b3c9a-3047-4163-ac09-309b8682dfb9",
+  "category": "90's song",
+  "createdAt": {
+    "$date": "2023-04-12T04:26:08.401Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T04:26:08.401Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64c93f667d663e8a476bbfd7"
+  },
+  "created_at": {
+    "$date": "2023-08-01T17:22:46.658Z"
+  },
+  "artistName": "Harish",
+  "artistImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FScreenshot_1.png?alt=media&token=43183eee-987a-49ea-85cd-8f258802c1a4",
+  "songName": "ra ra ralkama",
+  "songImage": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FScreenshot_1.png?alt=media&token=6de5a5a7-4fdf-4b05-af89-55b0afce6dbe",
+  "song": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/image%2FRa-Ra-Rakkamma-Telugu.mp3?alt=media&token=9b9b1d1f-f9fe-4b29-b288-9f2f6d7b8590",
+  "category": "HipHop",
+  "createdAt": {
+    "$date": "2023-08-01T17:22:46.679Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T17:22:46.679Z"
+  }
+}]

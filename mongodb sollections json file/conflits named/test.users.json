@@ -1,0 +1,200 @@
+[{
+  "_id": {
+    "$oid": "63f45f95834c90582d83e801"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1670341546",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T06:07:17.679Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T06:07:17.679Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63f46cbf834c90582d83e805"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1670341546",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T07:03:27.537Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T07:03:27.537Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63f46d887c67a80561278637"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1676963204",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T07:06:48.248Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T07:06:48.248Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63f46d887c67a8056127863a"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1676963204",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T07:06:48.316Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T07:06:48.316Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63f4d0ff5218303144079551"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1670341546",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T14:11:11.906Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T14:11:11.906Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63f4d14c521830314407962d"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1670341546",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T14:12:28.024Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T14:12:28.024Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63f4d15e5218303144079682"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1670341546",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T14:12:46.999Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T14:12:46.999Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63f4d1635218303144079686"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1670341546",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T14:12:51.640Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T14:12:51.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63f4de615218303144079689"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1670341546",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T15:08:17.032Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T15:08:17.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63f4e130521830314407968e"
+  },
+  "name": "Aditya Chauhan",
+  "email": "chaditya9769@gmail.com",
+  "imageURL": "https://lh3.googleusercontent.com/a/ALm5wu0kd0JLn5aEIMAKUoRCuED3_W88b7IZoF0Pv_DDLQ=s96-c",
+  "user_id": "EAahejFH68WiAruSLSPy885NxRt2",
+  "email_verfied": true,
+  "role": "admin",
+  "auth_time": "1670341546",
+  "favourites": [],
+  "createdAt": {
+    "$date": "2023-02-21T15:20:16.431Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T15:20:16.431Z"
+  },
+  "__v": 0
+}]

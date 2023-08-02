@@ -1,0 +1,997 @@
+[{
+  "_id": {
+    "$oid": "63ed985effd2bd9edf4da2e3"
+  },
+  "userId": {
+    "$oid": "63ed97adffd2bd9edf4da2c0"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RomaticSong",
+        "url": "https://images.unsplash.com/photo-1530801588537-594a77d18206?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwzfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Badshah",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FBadshah.jpeg?alt=media&token=c9e21148-c12d-4489-ab81-6d4957679d28",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-16T02:43:42.841Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-20T05:49:08.338Z"
+  },
+  "lastMusicCatId": "HipHop"
+},
+{
+  "_id": {
+    "$oid": "63ed9aa7ffd2bd9edf4da328"
+  },
+  "userId": {
+    "$oid": "63ed999bffd2bd9edf4da305"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RomaticSong",
+        "url": "https://images.unsplash.com/photo-1530801588537-594a77d18206?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwzfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Jubin Nautiyal",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJubin%20Nautiyal.jpeg?alt=media&token=5e35b3b5-a4dc-4b5e-83a7-0e7798506c30",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-16T02:53:27.663Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-16T02:57:47.495Z"
+  },
+  "lastMusicCatId": "HipHop"
+},
+{
+  "_id": {
+    "$oid": "63eda448ffd2bd9edf4da390"
+  },
+  "userId": {
+    "$oid": "63eda3ffffd2bd9edf4da389"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RockSong",
+        "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Honey singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=19b0ac96-f0f2-429f-af65-acd085417541",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-16T03:34:32.595Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-16T05:16:59.922Z"
+  },
+  "lastMusicCatId": "RockSong"
+},
+{
+  "_id": {
+    "$oid": "63ee42d5f626d8025a62d62a"
+  },
+  "userId": {
+    "$oid": "63ee4245f626d8025a62d623"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RockSong",
+        "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit Singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=93c2eacc-38c6-4025-a8a3-6e2f909382e5",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-16T14:51:01.047Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-16T15:17:01.616Z"
+  },
+  "lastMusicCatId": "RockSong"
+},
+{
+  "_id": {
+    "$oid": "63ef03370038f563818c19c9"
+  },
+  "userId": {
+    "$oid": "63ef03020038f563818c19c2"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RomaticSong",
+        "url": "https://images.unsplash.com/photo-1530801588537-594a77d18206?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwzfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Honey singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=19b0ac96-f0f2-429f-af65-acd085417541",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-17T04:31:51.625Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-17T04:35:04.588Z"
+  },
+  "lastMusicCatId": "HipHop"
+},
+{
+  "_id": {
+    "$oid": "63ef93cdc2b3a53940ec9ab3"
+  },
+  "userId": {
+    "$oid": "63ef938bc2b3a53940ec9aac"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "HipHop",
+        "url": "https://images.unsplash.com/photo-1485688809171-248861015a63?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Emiway Bantai",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FEmiway%20Bantai.jpeg?alt=media&token=0838bbb2-5e82-4c89-9d7a-7c34dee3ba11",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-17T14:48:45.229Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-25T08:03:01.559Z"
+  },
+  "lastMusicCatId": "HipHop"
+},
+{
+  "_id": {
+    "$oid": "63f254b14bcf5b34506e6c84"
+  },
+  "userId": {
+    "$oid": "63f2547e4bcf5b34506e6c7d"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RomaticSong",
+        "url": "https://images.unsplash.com/photo-1530801588537-594a77d18206?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwzfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit Singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=93c2eacc-38c6-4025-a8a3-6e2f909382e5",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-19T16:56:17.818Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-20T13:14:54.127Z"
+  },
+  "lastMusicCatId": "RomaticSong"
+},
+{
+  "_id": {
+    "$oid": "63f46dae5745b0417ce9fef3"
+  },
+  "userId": {
+    "$oid": "63f4657f585db8f3b027d0d9"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Other",
+        "url": "https://images.unsplash.com/photo-1566842937027-437d91739e89?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxMHx8c29uZ3N8ZW58MHx8fHwxNjc2MzgzMzE1&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RomaticSong",
+        "url": "https://images.unsplash.com/photo-1530801588537-594a77d18206?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwzfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit Singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=93c2eacc-38c6-4025-a8a3-6e2f909382e5",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-21T07:07:26.690Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-21T07:08:16.442Z"
+  },
+  "lastMusicCatId": "RockSong"
+},
+{
+  "_id": {
+    "$oid": "63f4cbf9cb65377d54db85a7"
+  },
+  "userId": {
+    "$oid": "63f4cbdacb65377d54db85a0"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "HipHop",
+        "url": "https://images.unsplash.com/photo-1485688809171-248861015a63?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit Singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=93c2eacc-38c6-4025-a8a3-6e2f909382e5",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-21T13:49:45.277Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-26T11:54:04.565Z"
+  },
+  "lastMusicCatId": "RomaticSong"
+},
+{
+  "_id": {
+    "$oid": "63f911bc7835995fe77dffeb"
+  },
+  "userId": {
+    "$oid": "63f911577835995fe77dffe4"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RockSong",
+        "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Jubin Nautiyal",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FJubin%20Nautiyal.jpeg?alt=media&token=5e35b3b5-a4dc-4b5e-83a7-0e7798506c30",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-24T19:36:28.460Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-26T06:55:34.632Z"
+  },
+  "lastMusicCatId": "HipHop"
+},
+{
+  "_id": {
+    "$oid": "63f9c73342c055c3dba28463"
+  },
+  "userId": {
+    "$oid": "63f9c6d842c055c3dba2845c"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RomaticSong",
+        "url": "https://images.unsplash.com/photo-1530801588537-594a77d18206?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwzfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Sonu nigam",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FSonu%20niagam.jpeg?alt=media&token=e5c9a45c-6518-47e6-91c6-7117a9e30ede",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-25T08:30:43.507Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-26T13:06:14.315Z"
+  },
+  "lastMusicCatId": "HipHop"
+},
+{
+  "_id": {
+    "$oid": "63fa29f371e9039a585cf5be"
+  },
+  "userId": {
+    "$oid": "63fa290771e9039a585cf5b7"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RockSong",
+        "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Badshah",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FBadshah.jpeg?alt=media&token=c9e21148-c12d-4489-ab81-6d4957679d28",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-25T15:32:03.977Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-28T04:53:54.844Z"
+  },
+  "lastMusicCatId": "RomaticSong",
+  "lastplayedMusicsIds": [
+    {
+      "userId": {
+        "$oid": "63fa290771e9039a585cf5b7"
+      },
+      "songId": {
+        "$oid": "63e703975b23095a7bf95983"
+      },
+      "_id": {
+        "$oid": "63fb9cae87fd19032663735d"
+      },
+      "createdAt": {
+        "$date": "2023-02-26T17:53:50.155Z"
+      },
+      "updatedAt": {
+        "$date": "2023-02-26T17:53:50.155Z"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "63fa290771e9039a585cf5b7"
+      },
+      "songId": {
+        "$oid": "63e68caa975b94b786e818d0"
+      },
+      "_id": {
+        "$oid": "63fb9ce587fd190326637361"
+      },
+      "createdAt": {
+        "$date": "2023-02-26T17:54:45.281Z"
+      },
+      "updatedAt": {
+        "$date": "2023-02-26T17:54:45.281Z"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "63fa290771e9039a585cf5b7"
+      },
+      "songId": {
+        "$oid": "63e703975b23095a7bf95983"
+      },
+      "_id": {
+        "$oid": "63fbaa702723636c29ea3915"
+      },
+      "createdAt": {
+        "$date": "2023-02-26T18:52:32.763Z"
+      },
+      "updatedAt": {
+        "$date": "2023-02-26T18:52:32.763Z"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "63fa290771e9039a585cf5b7"
+      },
+      "songId": {
+        "$oid": "63e68caa975b94b786e818d0"
+      },
+      "_id": {
+        "$oid": "63fbaa762723636c29ea391b"
+      },
+      "createdAt": {
+        "$date": "2023-02-26T18:52:38.130Z"
+      },
+      "updatedAt": {
+        "$date": "2023-02-26T18:52:38.130Z"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "63fa290771e9039a585cf5b7"
+      },
+      "songId": {
+        "$oid": "63e68caa975b94b786e818d0"
+      },
+      "_id": {
+        "$oid": "63fbaa782723636c29ea3922"
+      },
+      "createdAt": {
+        "$date": "2023-02-26T18:52:40.339Z"
+      },
+      "updatedAt": {
+        "$date": "2023-02-26T18:52:40.339Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "63fb877d17a8b59417b7bb05"
+  },
+  "userId": {
+    "$oid": "63fb873b17a8b59417b7bafe"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "HipHop",
+        "url": "https://images.unsplash.com/photo-1485688809171-248861015a63?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Honey singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=19b0ac96-f0f2-429f-af65-acd085417541",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-02-26T16:23:25.465Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-26T17:38:14.656Z"
+  },
+  "lastMusicCatId": "RomaticSong"
+},
+{
+  "_id": {
+    "$oid": "6404975ae3f32a0544fb5e6e"
+  },
+  "userId": {
+    "$oid": "6404972be3f32a0544fb5e67"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "HipHop",
+        "url": "https://images.unsplash.com/photo-1485688809171-248861015a63?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Honey singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=19b0ac96-f0f2-429f-af65-acd085417541",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-03-05T13:21:30.884Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-05T13:22:20.455Z"
+  },
+  "lastMusicCatId": "RomaticSong"
+},
+{
+  "_id": {
+    "$oid": "64207d3a7b527ef6e763b357"
+  },
+  "userId": {
+    "$oid": "64207bd47b527ef6e763b350"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RockSong",
+        "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fdua%20kro.jpeg?alt=media&token=01df53a9-b5bc-4aa2-9bf2-e301f0faf92b",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-03-26T17:13:30.736Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-28T02:55:09.896Z"
+  },
+  "lastMusicCatId": "HipHop"
+},
+{
+  "_id": {
+    "$oid": "64225f8490dfcafc2643048c"
+  },
+  "userId": {
+    "$oid": "64225f3490dfcafc26430485"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RockSong",
+        "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Divine",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FDivine.jpeg?alt=media&token=4d8d2f73-e422-4622-8cf8-8ee1ac3fa023",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-03-28T03:31:16.723Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-11T04:08:32.021Z"
+  },
+  "lastMusicCatId": "RockSong"
+},
+{
+  "_id": {
+    "$oid": "64247c81c8490afa546b1ad9"
+  },
+  "userId": {
+    "$oid": "64247c53c8490afa546b1ad2"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "HipHop",
+        "url": "https://images.unsplash.com/photo-1485688809171-248861015a63?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit Singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=93c2eacc-38c6-4025-a8a3-6e2f909382e5",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-03-29T17:59:29.518Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-29T17:59:29.518Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "642a5db56742f336fc742f21"
+  },
+  "userId": {
+    "$oid": "642a5d366742f336fc742f17"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RomaticSong",
+        "url": "https://images.unsplash.com/photo-1530801588537-594a77d18206?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwzfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fdua%20kro.jpeg?alt=media&token=01df53a9-b5bc-4aa2-9bf2-e301f0faf92b",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-04-03T05:01:41.890Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-03T05:01:41.890Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "642d1f33a15861941d8ce13f"
+  },
+  "userId": {
+    "$oid": "642d1ed6a15861941d8ce138"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "HipHop",
+        "url": "https://images.unsplash.com/photo-1485688809171-248861015a63?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Raftar X Brodha",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FNachne%20ka%20shaung.jpeg?alt=media&token=b7889a95-40f4-402d-a862-9be8be077614",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-04-05T07:11:47.300Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-05T07:15:02.427Z"
+  },
+  "lastMusicCatId": "RomaticSong"
+},
+{
+  "_id": {
+    "$oid": "643112b833a6719f3068b93d"
+  },
+  "userId": {
+    "$oid": "6431128e33a6719f3068b936"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RockSong",
+        "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fdua%20kro.jpeg?alt=media&token=01df53a9-b5bc-4aa2-9bf2-e301f0faf92b",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-04-08T07:07:36.641Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-08T07:09:40.734Z"
+  },
+  "lastMusicCatId": "HipHop"
+},
+{
+  "_id": {
+    "$oid": "6432d35f66ecb9d9b80f4be5"
+  },
+  "userId": {
+    "$oid": "6432d30c66ecb9d9b80f4bde"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RockSong",
+        "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Pawan Singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2Fpawan.jpeg?alt=media&token=e65ffbc3-e539-4ac3-a3f1-581b3b0366aa",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-04-09T15:01:51.400Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-09T15:37:27.789Z"
+  },
+  "lastMusicCatId": "RockSong"
+},
+{
+  "_id": {
+    "$oid": "6432e561fea25fb3242a7560"
+  },
+  "userId": {
+    "$oid": "6432e52dfea25fb3242a7559"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "Party",
+        "url": "https://images.pexels.com/photos/2747446/pexels-photo-2747446.jpeg?cs=srgb&dl=pexels-wolfgang-2747446.jpg&fm=jpg",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit Singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=93c2eacc-38c6-4025-a8a3-6e2f909382e5",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-04-09T16:18:41.143Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-09T16:21:31.419Z"
+  },
+  "lastMusicCatId": "HipHop"
+},
+{
+  "_id": {
+    "$oid": "64363018c72de9562c1608a9"
+  },
+  "userId": {
+    "$oid": "64362d5675b467b10a3451a5"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "HipHop",
+        "url": "https://images.unsplash.com/photo-1485688809171-248861015a63?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Arijit Singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FArijit%20Singh.jpeg?alt=media&token=93c2eacc-38c6-4025-a8a3-6e2f909382e5",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-04-12T04:14:16.915Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T04:29:38.761Z"
+  },
+  "lastMusicCatId": "90's song"
+},
+{
+  "_id": {
+    "$oid": "64c93cd77d663e8a476bbfb0"
+  },
+  "userId": {
+    "$oid": "64c93c797d663e8a476bbfa8"
+  },
+  "favCat": {
+    "language": [
+      {
+        "label": "Hindi",
+        "url": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+        "selected": true
+      }
+    ],
+    "category": [
+      {
+        "label": "RockSong",
+        "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+        "selected": true
+      }
+    ],
+    "artist": [
+      {
+        "label": "Honey singh",
+        "url": "https://firebasestorage.googleapis.com/v0/b/musicapp-23d21.appspot.com/o/songs%2FHoeny%20Singh.jpeg?alt=media&token=19b0ac96-f0f2-429f-af65-acd085417541",
+        "selected": true
+      }
+    ]
+  },
+  "createdAt": {
+    "$date": "2023-08-01T17:11:51.784Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T17:23:05.050Z"
+  },
+  "lastMusicCatId": "HipHop"
+}]

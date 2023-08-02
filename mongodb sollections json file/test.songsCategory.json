@@ -1,0 +1,102 @@
+[{
+  "_id": {
+    "$oid": "63e9a693c248b811a84814a2"
+  },
+  "created_at": {
+    "$date": "2023-02-13T02:55:15.491Z"
+  },
+  "label": "Hip Hop",
+  "value": "HipHop",
+  "url": "https://images.unsplash.com/photo-1485688809171-248861015a63?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwxfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+  "createdAt": {
+    "$date": "2023-02-13T02:55:15.505Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-13T02:55:15.505Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e9a6ccc248b811a84814a4"
+  },
+  "created_at": {
+    "$date": "2023-02-13T02:56:12.789Z"
+  },
+  "label": "Rock Song",
+  "value": "RockSong",
+  "url": "https://images.unsplash.com/photo-1525522819526-d571040e1607?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwyfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+  "createdAt": {
+    "$date": "2023-02-13T02:56:12.793Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-13T02:56:12.793Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e9a70fc248b811a84814a6"
+  },
+  "created_at": {
+    "$date": "2023-02-13T02:57:19.915Z"
+  },
+  "label": "Romatic Song",
+  "value": "RomaticSong",
+  "url": "https://images.unsplash.com/photo-1530801588537-594a77d18206?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwyNzIxODF8MHwxfHNlYXJjaHwzfHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3&q=80",
+  "createdAt": {
+    "$date": "2023-02-13T02:57:19.919Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-13T02:57:19.919Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63e9a753c248b811a84814aa"
+  },
+  "created_at": {
+    "$date": "2023-02-13T02:58:27.290Z"
+  },
+  "label": "Sad Song",
+  "value": "SadSong",
+  "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixid=MnwyNzIxODF8MHwxfHNlYXJjaHw4fHxtdXNpY3N8ZW58MHx8fHwxNjc2MjU0MzAx&ixlib=rb-4.0.3",
+  "createdAt": {
+    "$date": "2023-02-13T02:58:27.294Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-13T02:58:27.294Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6432dfade9c68a0650856f68"
+  },
+  "created_at": {
+    "$date": "2023-02-13T02:58:27.290Z"
+  },
+  "label": "Party",
+  "value": "Party",
+  "url": "https://images.pexels.com/photos/2747446/pexels-photo-2747446.jpeg?cs=srgb&dl=pexels-wolfgang-2747446.jpg&fm=jpg",
+  "createdAt": {
+    "$date": "2023-02-13T02:58:27.294Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-13T02:58:27.294Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6436306dba59cf29c24a7bcb"
+  },
+  "created_at": {
+    "$date": "2023-02-13T02:58:27.290Z"
+  },
+  "label": "90's songs",
+  "value": "90's songs",
+  "url": "https://www.jagranimages.com/images/newimg/06022022/06_02_2022-lata_mangeshkar_1_22443903.jpg",
+  "createdAt": {
+    "$date": "2023-02-13T02:58:27.294Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-13T02:58:27.294Z"
+  }
+}]

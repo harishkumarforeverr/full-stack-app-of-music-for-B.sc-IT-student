@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "64225f3490dfcafc26430485"
+  },
+  "email": "ankit12@gmail.com",
+  "password": "Ankit@1234",
+  "username": "ankit cohube",
+  "phone": "8979896796",
+  "createdAt": {
+    "$date": "2023-03-28T03:29:56.979Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-31T04:38:48.057Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "642a5d366742f336fc742f17"
+  },
+  "email": "Aaditya12@gmail.com",
+  "password": "Aditya200@@",
+  "username": "Aditya",
+  "phone": "9879656796",
+  "createdAt": {
+    "$date": "2023-04-03T04:59:34.166Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-03T04:59:34.166Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "642d1ed6a15861941d8ce138"
+  },
+  "email": "mukesh12@gmail.com",
+  "password": "Mukesh@12",
+  "username": "mukesh chor",
+  "phone": "9897969512",
+  "createdAt": {
+    "$date": "2023-04-05T07:10:14.116Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-05T07:10:14.116Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6431128e33a6719f3068b936"
+  },
+  "email": "sunny12@gmail.com",
+  "password": "Sunny12@",
+  "username": "sunny",
+  "phone": "9878767898",
+  "createdAt": {
+    "$date": "2023-04-08T07:06:55.025Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-08T07:06:55.025Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6432d30c66ecb9d9b80f4bde"
+  },
+  "email": "ankit123@gmail.com",
+  "password": "Ankit@1234",
+  "username": "ankit",
+  "phone": "1234567890",
+  "createdAt": {
+    "$date": "2023-04-09T15:00:28.155Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-09T15:00:28.155Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6432e52dfea25fb3242a7559"
+  },
+  "email": "sachin@gmail.com",
+  "password": "Sachin@1234",
+  "username": "sachin",
+  "phone": "1234567899",
+  "createdAt": {
+    "$date": "2023-04-09T16:17:49.272Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-09T16:17:49.272Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64362d5675b467b10a3451a5"
+  },
+  "email": "aditya@gmail.com",
+  "password": "Aditya@12",
+  "username": "aditya12",
+  "phone": "9879896786",
+  "createdAt": {
+    "$date": "2023-04-12T04:02:30.171Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T04:02:30.171Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64362d5675b467b10a3451a7"
+  },
+  "email": "aditya@gmail.com",
+  "password": "Aditya@12",
+  "username": "aditya12",
+  "phone": "9879896786",
+  "createdAt": {
+    "$date": "2023-04-12T04:02:30.782Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-12T04:02:30.782Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64c93c4b7d663e8a476bbfa5"
+  },
+  "email": "harish@gmail.com",
+  "password": "Harish@123",
+  "username": "harish",
+  "phone": "9063488446",
+  "createdAt": {
+    "$date": "2023-08-01T17:09:31.064Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T17:09:31.064Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64c93c797d663e8a476bbfa8"
+  },
+  "email": "harishking809@gmail.com",
+  "password": "Qwerty@1234",
+  "username": "harishkumarforever",
+  "phone": "234567876543245",
+  "createdAt": {
+    "$date": "2023-08-01T17:10:17.788Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T17:10:17.788Z"
+  }
+}]

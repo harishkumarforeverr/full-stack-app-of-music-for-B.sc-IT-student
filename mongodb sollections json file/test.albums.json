@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "63a5cebc28f4889860514a3d"
+  },
+  "name": "Hip Hop",
+  "imageURL": "https://images.herzindagi.info/image/2022/Mar/bollywood-songs-arijit-singh.jpg",
+  "createdAt": {
+    "$date": "2022-12-23T15:52:28.569Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-23T15:52:28.569Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63a5d61e0e1d85a2d0db62f7"
+  },
+  "name": "jaz",
+  "imageURL": "https://images.herzindagi.info/image/2022/Mar/bollywood-songs-arijit-singh.jpg",
+  "createdAt": {
+    "$date": "2022-12-23T16:23:58.890Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-23T16:26:41.350Z"
+  },
+  "__v": 0
+}]

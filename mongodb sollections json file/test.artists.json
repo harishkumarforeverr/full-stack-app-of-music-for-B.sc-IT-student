@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "63a331fd654eb99aa75a3f94"
+  },
+  "name": "A.R.Rahman",
+  "imageURL": "https://assets.vogue.in/photos/5d9af125d3535f0008d722a9/master/pass/f.jpg",
+  "twitter": "www.twitter.com",
+  "instagram": "www.instagram.com",
+  "createdAt": {
+    "$date": "2022-12-21T16:19:09.443Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-21T16:19:09.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63a5c886859d42922f903fe4"
+  },
+  "name": "Arijit Singh",
+  "imageURL": "https://images.herzindagi.info/image/2022/Mar/bollywood-songs-arijit-singh.jpg",
+  "twitter": "www.twitter.com",
+  "instagram": "www.instagram.com/ar",
+  "createdAt": {
+    "$date": "2022-12-23T15:25:58.458Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-23T15:43:58.801Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63de87a29996729075306c66"
+  },
+  "name": "adele",
+  "imageURL": "https://firebasestorage.googleapis.com/v0/b/projectmusicapp-123eb.appspot.com/o/Image%2F1675528084094-adele.jpeg?alt=media&token=19f786b8-ff19-48d4-9bff-70dbcfc89a39",
+  "twitter": "adele211",
+  "instagram": "adele211",
+  "createdAt": {
+    "$date": "2023-02-04T16:28:18.049Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-04T16:28:18.049Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "63de87db9996729075306d77"
+  },
+  "name": "badshah",
+  "imageURL": "https://firebasestorage.googleapis.com/v0/b/projectmusicapp-123eb.appspot.com/o/Image%2F1675528140414-badshah.jpeg?alt=media&token=a660a264-d0e6-4a95-95b5-77d9c39e636c",
+  "twitter": "badshah12",
+  "instagram": "1234",
+  "createdAt": {
+    "$date": "2023-02-04T16:29:15.543Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-04T16:29:15.543Z"
+  },
+  "__v": 0
+}]
